@@ -37,7 +37,7 @@ describe('Switch', () => {
   it('should call the change handler when toggled', () => {
     const onChange = jest.fn();
     const { getByTestId } = render(
-      <Switch onChange={onChange} data-testid="switch" />
+      <Switch onChange={onChange} data-testid="switch" />,
     );
     act(() => {
       fireEvent.click(getByTestId('switch'));

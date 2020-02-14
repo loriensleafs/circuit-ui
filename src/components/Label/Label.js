@@ -53,11 +53,11 @@ Label.propTypes = {
    * Visually hides the label, but keeps it available to screen readers.
    * Useful to add a label to purely visual elements.
    */
-  visuallyHidden: PropTypes.bool
+  visuallyHidden: PropTypes.bool,
 };
 
 Label.defaultProps = {
-  visuallyHidden: false
+  visuallyHidden: false,
 };
 
 /**

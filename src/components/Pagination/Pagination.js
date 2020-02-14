@@ -29,7 +29,7 @@ const PAGINATION = {
   LABEL_PREVIOUS: '<',
   FOOTER: null,
   ALIGN: 'center',
-  JUSTIFY: 'center'
+  JUSTIFY: 'center',
 };
 
 const PaginationButtonContainer = ({ currentPage, page, onChange }) => {
@@ -49,7 +49,7 @@ PaginationButtonContainer.propTypes = {
   currentPage: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
     .isRequired,
   page: PropTypes.number,
-  onChange: PropTypes.func.isRequired
+  onChange: PropTypes.func.isRequired,
 };
 
 /**
@@ -96,16 +96,16 @@ const Pagination = ({
   }
   const previousValues = PaginationService.arrayOfPreviousValues(
     page,
-    totalPages
+    totalPages,
   );
   const nextValues = PaginationService.arrayOfNextValues(page, totalPages);
 
   const hasOmittedPreviousPages = PaginationService.hasOmittedPreviousPages(
-    previousValues
+    previousValues,
   );
   const hasOmittedNextPages = PaginationService.hasOmittedNextPages(
     nextValues,
-    totalPages
+    totalPages,
   );
 
   const isFirstOrLastPage = page === totalPages || page === 1;
@@ -194,7 +194,7 @@ Pagination.propTypes = {
   /**
    * Text to be shown on the pagination footer
    */
-  footer: PropTypes.string
+  footer: PropTypes.string,
 };
 
 Pagination.defaultProps = {
@@ -203,7 +203,7 @@ Pagination.defaultProps = {
   pagesToShow: PAGINATION.PAGES_TO_SHOW,
   nextLabel: PAGINATION.LABEL_NEXT,
   previousLabel: PAGINATION.LABEL_PREVIOUS,
-  footer: PAGINATION.FOOTER
+  footer: PAGINATION.FOOTER,
 };
 
 /**

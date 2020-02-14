@@ -38,8 +38,8 @@ export default {
   component: Tag,
   parameters: {
     docs: { page: docs },
-    jest: ['Tag']
-  }
+    jest: ['Tag'],
+  },
 };
 
 export const base = () => (

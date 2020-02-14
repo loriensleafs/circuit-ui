@@ -26,7 +26,7 @@ const StyledIconButton = styled(IconButton)(
   ({ theme }) => css`
     label: close-button;
     ${svgKilo({ theme })};
-  `
+  `,
 );
 
 /**
@@ -42,11 +42,11 @@ CloseButton.propTypes = {
   /**
    * Text label for screen readers. Important for accessibility.
    */
-  label: PropTypes.string
+  label: PropTypes.string,
 };
 
 CloseButton.defaultProps = {
-  label: 'Close'
+  label: 'Close',
 };
 
 /**

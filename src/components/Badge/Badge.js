@@ -26,28 +26,28 @@ const COLOR_MAP = {
   [colorNames.SUCCESS]: {
     default: 'g500',
     hover: 'g700',
-    active: 'g900'
+    active: 'g900',
   },
   [colorNames.WARNING]: {
     default: 'y500',
     hover: 'y700',
-    active: 'y900'
+    active: 'y900',
   },
   [colorNames.DANGER]: {
     default: 'r500',
     hover: 'r700',
-    active: 'r900'
+    active: 'r900',
   },
   [colorNames.PRIMARY]: {
     default: 'b500',
     hover: 'b700',
-    active: 'b900'
+    active: 'b900',
   },
   [colorNames.NEUTRAL]: {
     default: 'n500',
     hover: 'n700',
-    active: 'n900'
-  }
+    active: 'n900',
+  },
 };
 
 const colorStyles = ({ theme, color, onClick }) => {
@@ -128,13 +128,13 @@ Badge.propTypes = {
     Badge.PRIMARY,
     Badge.SUCCESS,
     Badge.WARNING,
-    Badge.DANGER
-  ])
+    Badge.DANGER,
+  ]),
 };
 
 Badge.defaultProps = {
   circle: false,
-  color: Badge.NEUTRAL
+  color: Badge.NEUTRAL,
 };
 
 /**

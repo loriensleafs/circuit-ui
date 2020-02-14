@@ -24,8 +24,8 @@ export default {
   component: Tooltip,
   parameters: {
     docs: { page: docs },
-    jest: ['Tooltip']
-  }
+    jest: ['Tooltip'],
+  },
 };
 
 const Icon = () => (

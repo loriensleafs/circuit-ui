@@ -84,7 +84,7 @@ describe('PaginationService', () => {
       it('should return false', () => {
         const previousValues = [2];
         const shouldHaveDots = PaginationService.hasOmittedPreviousPages(
-          previousValues
+          previousValues,
         );
         expect(shouldHaveDots).toBeFalsy();
       });
@@ -94,7 +94,7 @@ describe('PaginationService', () => {
       it('should return false', () => {
         const previousValues = [2];
         const shouldHaveDots = PaginationService.hasOmittedPreviousPages(
-          previousValues
+          previousValues,
         );
         expect(shouldHaveDots).toBeFalsy();
       });
@@ -104,7 +104,7 @@ describe('PaginationService', () => {
       it('should return true', () => {
         const previousValues = [4];
         const shouldHaveDots = PaginationService.hasOmittedPreviousPages(
-          previousValues
+          previousValues,
         );
         expect(shouldHaveDots).toBeTruthy();
       });
@@ -114,7 +114,7 @@ describe('PaginationService', () => {
       it('should return true', () => {
         const previousValues = [48, 47];
         const shouldHaveDots = PaginationService.hasOmittedPreviousPages(
-          previousValues
+          previousValues,
         );
         expect(shouldHaveDots).toBeTruthy();
       });
@@ -124,7 +124,7 @@ describe('PaginationService', () => {
       it('should return true', () => {
         const previousValues = [47, 48, 49];
         const shouldHaveDots = PaginationService.hasOmittedPreviousPages(
-          previousValues
+          previousValues,
         );
         expect(shouldHaveDots).toBeTruthy();
       });
@@ -174,7 +174,7 @@ describe('PaginationService', () => {
         const nextValues = [];
         const shouldHaveDots = PaginationService.hasOmittedNextPages(
           nextValues,
-          50
+          50,
         );
         expect(shouldHaveDots).toBeFalsy();
       });
@@ -185,7 +185,7 @@ describe('PaginationService', () => {
         const nextValues = [2];
         const shouldHaveDots = PaginationService.hasOmittedNextPages(
           nextValues,
-          50
+          50,
         );
         expect(shouldHaveDots).toBeTruthy();
       });
@@ -196,7 +196,7 @@ describe('PaginationService', () => {
         const nextValues = [7];
         const shouldHaveDots = PaginationService.hasOmittedNextPages(
           nextValues,
-          10
+          10,
         );
         expect(shouldHaveDots).toBeTruthy();
       });
@@ -207,7 +207,7 @@ describe('PaginationService', () => {
         const nextValues = [47, 48, 49];
         const shouldHaveDots = PaginationService.hasOmittedNextPages(
           nextValues,
-          50
+          50,
         );
         expect(shouldHaveDots).toBeFalsy();
       });
@@ -218,7 +218,7 @@ describe('PaginationService', () => {
         const nextValues = [47, 48, 49];
         const shouldHaveDots = PaginationService.hasOmittedNextPages(
           nextValues,
-          50
+          50,
         );
         expect(shouldHaveDots).toBeFalsy();
       });

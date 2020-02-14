@@ -57,11 +57,11 @@ SlideImage.propTypes = {
   /**
    * Image aspect ratio.
    */
-  aspectRatio: PropTypes.number
+  aspectRatio: PropTypes.number,
 };
 
 SlideImage.defaultProps = {
-  aspectRatio: ASPECT_RATIO
+  aspectRatio: ASPECT_RATIO,
 };
 
 export default SlideImage;

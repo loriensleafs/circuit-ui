@@ -23,8 +23,8 @@ export default {
   component: Label,
   parameters: {
     docs: { page: docs },
-    jest: ['Label']
-  }
+    jest: ['Label'],
+  },
 };
 
 export const base = () => <Label>An input label</Label>;

@@ -21,7 +21,7 @@ import { size } from 'polished';
 
 import {
   eitherOrPropType,
-  childrenPropType
+  childrenPropType,
 } from '../../util/shared-prop-types';
 import { textMega, disableVisually } from '../../styles/style-helpers';
 
@@ -216,7 +216,7 @@ const Select = ({
           invalid,
           value,
           disabled,
-          hasPrefix: !!prefix
+          hasPrefix: !!prefix,
         }}
       >
         {!value && (
@@ -267,10 +267,10 @@ Select.propTypes = {
         value: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
           .isRequired,
         label: PropTypes.string.isRequired,
-        disabled: PropTypes.bool
-      })
+        disabled: PropTypes.bool,
+      }),
     ),
-    true
+    true,
   ),
   /**
    * Styles the select as disabled.
@@ -306,7 +306,7 @@ Select.propTypes = {
   /**
    * Warning or error message, displayed in a tooltip.
    */
-  validationHint: PropTypes.string
+  validationHint: PropTypes.string,
 };
 
 Select.defaultProps = {
@@ -317,7 +317,7 @@ Select.defaultProps = {
   placeholder: 'Select an option',
   inline: false,
   noMargin: false,
-  renderPrefix: null
+  renderPrefix: null,
 };
 
 /**

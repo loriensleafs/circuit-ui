@@ -23,8 +23,8 @@ export default {
   title: 'Components/Header',
   component: Header,
   parameters: {
-    jest: ['Header']
-  }
+    jest: ['Header'],
+  },
 };
 
 export const base = () => (

@@ -27,7 +27,7 @@ const { KILO, MEGA, GIGA } = sizes;
 const mobileSizeMap = {
   [KILO]: KILO,
   [MEGA]: MEGA,
-  [GIGA]: MEGA
+  [GIGA]: MEGA,
 };
 
 const baseStyles = ({ theme }) => css`
@@ -82,7 +82,7 @@ const marginStyles = ({ noMargin }) =>
   `;
 
 export const StyledText = styled('p', {
-  shouldForwardProp: prop => isPropValid(prop) && prop !== 'size'
+  shouldForwardProp: prop => isPropValid(prop) && prop !== 'size',
 })`
   ${baseStyles};
   ${sizeStyles};
@@ -135,7 +135,7 @@ Text.propTypes = {
   /**
    * The HTML element to render.
    */
-  as: PropTypes.string
+  as: PropTypes.string,
 };
 
 Text.defaultProps = {
@@ -144,7 +144,7 @@ Text.defaultProps = {
   noMargin: false,
   bold: false,
   italic: false,
-  children: null
+  children: null,
 };
 
 /**

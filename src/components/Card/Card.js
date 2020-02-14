@@ -21,7 +21,7 @@ import { childrenPropType } from '../../util/shared-prop-types';
 import {
   shadowSingle,
   shadowDouble,
-  shadowTriple
+  shadowTriple,
 } from '../../styles/style-helpers';
 import { sizes, shadows } from '../../styles/constants';
 
@@ -44,7 +44,7 @@ const shadowStyles = ({ theme, shadow }) => {
   const shadowOptions = {
     [SINGLE]: shadowSingle,
     [DOUBLE]: shadowDouble,
-    [TRIPLE]: shadowTriple
+    [TRIPLE]: shadowTriple,
   };
   return css`
     label: ${`card--shadow-${shadow}`};
@@ -62,7 +62,7 @@ const spacingStyles = ({ theme, spacing }) => {
     `,
     [GIGA]: `
       ${theme.spacings.mega} ${theme.spacings.giga}
-    `
+    `,
   };
   return css`
     label: ${`card--spacing-${spacing}`};
@@ -98,12 +98,12 @@ Card.propTypes = {
   /**
    * Content to be rendered inside the Card.
    */
-  children: childrenPropType
+  children: childrenPropType,
 };
 
 Card.defaultProps = {
   spacing: Card.GIGA,
-  shadow: Card.SINGLE
+  shadow: Card.SINGLE,
 };
 
 /**

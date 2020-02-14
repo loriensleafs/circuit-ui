@@ -23,8 +23,8 @@ export default {
   title: 'Forms/Input/CurrencyInput/SimpleCurrencyInput',
   component: SimpleCurrencyInput,
   parameters: {
-    jest: ['SimpleCurrencyInput']
-  }
+    jest: ['SimpleCurrencyInput'],
+  },
 };
 
 const numberMask = createNumberMask({
@@ -33,7 +33,7 @@ const numberMask = createNumberMask({
   thousandsSeparatorSymbol: ',',
   allowDecimal: true,
   decimalLimit: 2,
-  decimalSymbol: '.'
+  decimalSymbol: '.',
 });
 
 export const base = () => (

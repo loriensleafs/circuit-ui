@@ -18,7 +18,7 @@ import createNumberMask from 'text-mask-addons/dist/createNumberMask';
 import {
   normalizeAmount,
   createCurrencyMask,
-  isValidAmount
+  isValidAmount,
 } from './CurrencyInputService';
 
 import { keys } from '../../util/fp';
@@ -137,7 +137,7 @@ describe('CurrencyInputService', () => {
       const actualThousandsSeparatorSymbol = options.thousandsSeparatorSymbol;
       expect(actualDecimalSymbol).toEqual(expectedDecimalSymbol);
       expect(actualThousandsSeparatorSymbol).toEqual(
-        expectedThousandsSeparatorSymbol
+        expectedThousandsSeparatorSymbol,
       );
     });
 
@@ -152,7 +152,7 @@ describe('CurrencyInputService', () => {
       const actualThousandsSeparatorSymbol = options.thousandsSeparatorSymbol;
       expect(actualDecimalSymbol).toEqual(expectedDecimalSymbol);
       expect(actualThousandsSeparatorSymbol).toEqual(
-        expectedThousandsSeparatorSymbol
+        expectedThousandsSeparatorSymbol,
       );
     });
   });

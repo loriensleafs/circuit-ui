@@ -41,7 +41,7 @@ const CurrencyInput = ({ locale, currency, ...props }) => {
 CurrencyInput.propTypes = {
   theme: themePropType.isRequired,
   locale: localePropType(true),
-  currency: PropTypes.oneOf(keys(CURRENCY_SYMBOLS)).isRequired
+  currency: PropTypes.oneOf(keys(CURRENCY_SYMBOLS)).isRequired,
 };
 
 /**

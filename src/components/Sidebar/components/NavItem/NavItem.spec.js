@@ -23,7 +23,7 @@ describe('NavItem', () => {
     it('should render with default styles and match the snapshot', () => {
       const props = {
         selected: false,
-        onClick: jest.fn()
+        onClick: jest.fn(),
       };
       const actual = create(<NavItem {...props} />);
       expect(actual).toMatchSnapshot();
@@ -33,7 +33,7 @@ describe('NavItem', () => {
       const props = {
         secondary: true,
         selected: false,
-        onClick: jest.fn()
+        onClick: jest.fn(),
       };
       const actual = create(<NavItem {...props} />);
       expect(actual).toMatchSnapshot();
@@ -42,7 +42,7 @@ describe('NavItem', () => {
     it('should render with selected state styles and match the snapshot', () => {
       const props = {
         selected: true,
-        onClick: jest.fn()
+        onClick: jest.fn(),
       };
       const actual = create(<NavItem {...props} />);
       expect(actual).toMatchSnapshot();
@@ -50,7 +50,7 @@ describe('NavItem', () => {
 
     it('should render with disabled state styles and match the snapshot', () => {
       const props = {
-        disabled: true
+        disabled: true,
       };
       const actual = create(<NavItem {...props} />);
       expect(actual).toMatchSnapshot();
@@ -58,7 +58,7 @@ describe('NavItem', () => {
 
     it('should render an icon', () => {
       const { getByTestId } = render(
-        <NavItem defaultIcon={<div data-testid="icon" />} />
+        <NavItem defaultIcon={<div data-testid="icon" />} />,
       );
       const iconEl = getByTestId('icon');
       expect(iconEl).not.toBeNull();
@@ -70,7 +70,7 @@ describe('NavItem', () => {
       const wrapper = renderToHtml(
         <NavList>
           <NavItem label="Item" />
-        </NavList>
+        </NavList>,
       );
       const actual = await axe(wrapper);
       expect(actual).toHaveNoViolations();

@@ -21,8 +21,8 @@ export default {
   title: 'Components/Button/IconButton',
   component: IconButton,
   parameters: {
-    jest: ['IconButton']
-  }
+    jest: ['IconButton'],
+  },
 };
 
 const Icon = () => (

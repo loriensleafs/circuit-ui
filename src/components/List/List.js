@@ -40,20 +40,20 @@ const sizeStyles = ({ theme, size }) => {
       marginBottom: theme.spacings[KILO],
       paddingLeft: theme.spacings[KILO],
       marginLeft: theme.spacings[BIT],
-      type: textKilo({ theme })
+      type: textKilo({ theme }),
     },
     [MEGA]: {
       marginBottom: theme.spacings[BYTE],
       paddingLeft: theme.spacings[KILO],
       marginLeft: theme.spacings[KILO],
-      type: textMega({ theme })
+      type: textMega({ theme }),
     },
     [GIGA]: {
       marginBottom: theme.spacings[KILO],
       paddingLeft: theme.spacings[MEGA],
       marginLeft: theme.spacings[KILO],
-      type: textGiga({ theme })
-    }
+      type: textGiga({ theme }),
+    },
   };
   const { marginBottom, paddingLeft, marginLeft, type } = settings[size];
   return css`
@@ -81,7 +81,7 @@ const marginStyles = ({ noMargin }) =>
   `;
 
 const StyledList = styled('ol', {
-  shouldForwardProp: prop => isPropValid(prop) && prop !== 'size'
+  shouldForwardProp: prop => isPropValid(prop) && prop !== 'size',
 })`
   ${baseStyles};
   ${sizeStyles};
@@ -115,13 +115,13 @@ List.propTypes = {
   /**
    * Removes the default bottom margin from the text.
    */
-  noMargin: PropTypes.bool
+  noMargin: PropTypes.bool,
 };
 
 List.defaultProps = {
   size: List.KILO,
   ordered: false,
-  noMargin: false
+  noMargin: false,
 };
 
 /**

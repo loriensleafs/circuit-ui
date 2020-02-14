@@ -26,8 +26,8 @@ export default {
   component: CurrencyInput,
   parameters: {
     docs: { page: docs },
-    jest: ['CurrencyInput']
-  }
+    jest: ['CurrencyInput'],
+  },
 };
 
 // CurrencyInputs always need labels for accessibility.

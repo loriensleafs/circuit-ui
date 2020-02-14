@@ -33,7 +33,7 @@ export {
   last,
   head,
   omit,
-  range
+  range,
 } from 'lodash/fp';
 
 export const keys = obj => Object.keys(obj);
@@ -45,21 +45,21 @@ export const map = curry((iteratee, arr) => arr.map(iteratee));
 export const mapValues = curry((iteratee, obj) =>
   Object.keys(obj).reduce(
     (acc, key) => ({ ...acc, [key]: iteratee(obj[key]) }),
-    {}
-  )
+    {},
+  ),
 );
 
 export const mapKeys = curry((iteratee, obj) =>
   Object.keys(obj).reduce((acc, key) => {
     const newKey = iteratee[key];
     return { ...acc, [newKey]: obj[key] };
-  })
+  }),
 );
 
 export const reverse = arr => [...arr].reverse();
 
 export const findLast = curry((predicate, arr) =>
-  flow(reverse, find(predicate))(arr)
+  flow(reverse, find(predicate))(arr),
 );
 
 export const reduce = curry((iteratee, acc, arr) => arr.reduce(iteratee, acc));
@@ -81,8 +81,8 @@ export const pick = curry((picks, obj) =>
   reduce(
     (picked, prop) => (obj[prop] ? { ...picked, [prop]: obj[prop] } : picked),
     {},
-    picks
-  )
+    picks,
+  ),
 );
 
 export const pickBy = curry((iteratee, obj) =>
@@ -91,9 +91,9 @@ export const pickBy = curry((iteratee, obj) =>
     reduce(
       (picked, key) =>
         iteratee(obj[key]) ? { ...picked, [key]: obj[key] } : picked,
-      {}
-    )
-  )(obj)
+      {},
+    ),
+  )(obj),
 );
 
 export const toBool = val => !!val;

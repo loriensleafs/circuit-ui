@@ -35,11 +35,11 @@ const SearchInput = ({ children, ...props }) => (
 
 SearchInput.propTypes = {
   ...Input.propTypes,
-  children: childrenPropType
+  children: childrenPropType,
 };
 
 SearchInput.defaultProps = {
-  children: null
+  children: null,
 };
 
 /**

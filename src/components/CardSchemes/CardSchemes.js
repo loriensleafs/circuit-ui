@@ -71,11 +71,11 @@ CardSchemes.propTypes = {
   /**
    * The optional sizes of the icons of the card scheme
    */
-  size: PropTypes.oneOf([BYTE, KILO, MEGA, GIGA])
+  size: PropTypes.oneOf([BYTE, KILO, MEGA, GIGA]),
 };
 
 CardSchemes.defaultProps = {
-  size: GIGA
+  size: GIGA,
 };
 
 /**

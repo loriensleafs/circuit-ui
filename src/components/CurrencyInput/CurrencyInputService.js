@@ -43,7 +43,7 @@ export const createCurrencyMask = (currency, locale, options = {}) => {
   const {
     decimalSep: decimalSymbol = '.',
     thousandSep: thousandsSeparatorSymbol = ',',
-    currencyPrecision: decimalLimit
+    currencyPrecision: decimalLimit,
   } = getCurrencyFormat(currency, locale);
 
   return createNumberMask({
@@ -53,17 +53,17 @@ export const createCurrencyMask = (currency, locale, options = {}) => {
     allowDecimal: decimalLimit > 0,
     decimalLimit,
     decimalSymbol,
-    ...options
+    ...options,
   });
 };
 
 export const isValidAmount = curry((currency, locale, value) => {
   const { decimalSep, thousandSep, currencyPrecision } = getCurrencyFormat(
     currency,
-    locale
+    locale,
   );
   const pattern = currencyToRegex([thousandSep], currencyPrecision, [
-    decimalSep
+    decimalSep,
   ]);
   const regex = new RegExp(pattern);
   return regex.test(value);

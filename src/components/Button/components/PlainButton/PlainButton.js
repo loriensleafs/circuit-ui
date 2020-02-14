@@ -51,7 +51,7 @@ const primaryStyles = ({ theme, primary }) =>
 
 const ButtonLinkWrapper = styled(StyledText)(
   baseStyles,
-  primaryStyles
+  primaryStyles,
 ).withComponent('button');
 
 /* eslint-disable react/prop-types */

@@ -26,20 +26,20 @@ const LoadingButtonWithState = ({ exitAnimation, ...props }) => {
   const [loading, setLoading] = useState({
     DEFAULT: false,
     SUCCESS: false,
-    ERROR: false
+    ERROR: false,
   });
 
   const handleClick = () => {
     // trigger loading state
     setLoading({
       ...loading,
-      [variation]: true
+      [variation]: true,
     });
     // reset loading
     setTimeout(() => {
       setLoading({
         ...loading,
-        [variation]: false
+        [variation]: false,
       });
     }, 1000);
   };
@@ -58,8 +58,8 @@ export default {
   title: 'Components/Button/LoadingButton',
   component: LoadingButton,
   parameters: {
-    jest: ['LoadingButton']
-  }
+    jest: ['LoadingButton'],
+  },
 };
 
 export const successAnimation = () => (

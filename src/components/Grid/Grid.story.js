@@ -38,7 +38,7 @@ const StyledCol = styled(Col)`
 `;
 
 StyledCol.defaultProps = {
-  skip: '0'
+  skip: '0',
 };
 
 const StyledRow = styled(Row)`
@@ -50,8 +50,8 @@ export default {
   title: 'Layout/Grid/Grid',
   component: Grid,
   parameters: {
-    jest: ['Grid']
-  }
+    jest: ['Grid'],
+  },
 };
 
 export const staticColumns = () => (

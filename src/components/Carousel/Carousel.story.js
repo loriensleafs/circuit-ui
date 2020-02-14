@@ -37,8 +37,8 @@ export default {
   component: Carousel,
   parameters: {
     docs: { page: docs },
-    jest: ['Carousel']
-  }
+    jest: ['Carousel'],
+  },
 };
 
 const CustomCarousel = ({ slides }) => {
@@ -57,7 +57,7 @@ const CustomCarousel = ({ slides }) => {
             step={step}
             style={{
               opacity: step === index ? 1 : 0,
-              transition: 'opacity .3s ease-in'
+              transition: 'opacity .3s ease-in',
             }}
           >
             <SlideImage

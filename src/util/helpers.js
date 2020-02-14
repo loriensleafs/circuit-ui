@@ -34,7 +34,7 @@ export function createChainedFunction(...funcs) {
       warning(
         typeof func === 'function',
         `Circuit-UI: invalid Argument Type,
-        must only provide functions, undefined, or null.`
+        must only provide functions, undefined, or null.`,
       );
 
       return function chainedFunction(...args) {
@@ -42,6 +42,6 @@ export function createChainedFunction(...funcs) {
         func.apply(this, args);
       };
     },
-    () => {}
+    () => {},
   );
 }

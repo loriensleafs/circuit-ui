@@ -40,7 +40,7 @@ Message.propTypes = {
    * Content to be rendered inside the Message.
    * Supports a special MessageIcon and MessageButton.
    */
-  children: childrenPropType
+  children: childrenPropType,
 };
 
 /**

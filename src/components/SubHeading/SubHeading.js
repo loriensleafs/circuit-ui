@@ -77,14 +77,14 @@ SubHeading.propTypes = {
   /**
    * The HTML heading element to render.
    */
-  as: PropTypes.oneOf(['h2', 'h3', 'h4', 'h5', 'h6'])
+  as: PropTypes.oneOf(['h2', 'h3', 'h4', 'h5', 'h6']),
 };
 
 SubHeading.defaultProps = {
   size: SubHeading.KILO,
   className: '',
   noMargin: false,
-  children: null
+  children: null,
 };
 
 /**

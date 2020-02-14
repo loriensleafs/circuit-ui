@@ -74,13 +74,13 @@ PaymentMethodIcon.propTypes = {
     PaymentMethodIcon.BYTE,
     PaymentMethodIcon.KILO,
     PaymentMethodIcon.MEGA,
-    PaymentMethodIcon.GIGA
-  ])
+    PaymentMethodIcon.GIGA,
+  ]),
 };
 
 PaymentMethodIcon.defaultProps = {
   iconId: '',
-  size: PaymentMethodIcon.GIGA
+  size: PaymentMethodIcon.GIGA,
 };
 
 /**

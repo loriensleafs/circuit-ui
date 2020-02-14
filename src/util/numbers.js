@@ -54,7 +54,7 @@ export const NUMBER_SEPARATORS = {
   'ru-RU': { decimal: ',', thousand: '\xA0' },
   'sl-SI': { decimal: ',', thousand: '.' },
   'sk-SK': { decimal: ',', thousand: '\xA0' },
-  'sv-SE': { decimal: ',', thousand: '\xA0' }
+  'sv-SE': { decimal: ',', thousand: '\xA0' },
 };
 
 function formatInteger(integer, { groupLength = 3, thousandSep = ',' } = {}) {
@@ -81,12 +81,12 @@ export function getNumberFormat(locale) {
 
 export function formatNumberParts(
   number,
-  { precision = 2, ...integerOptions } = {}
+  { precision = 2, ...integerOptions } = {},
 ) {
   // Capture integer and decimal part of number
   const { integer, fractional } = getIntegerAndFractionalParts(
     number,
-    precision
+    precision,
   );
   const formattedInteger = formatInteger(integer, integerOptions);
   return { integer: formattedInteger, fractional };
@@ -94,11 +94,11 @@ export function formatNumberParts(
 
 export function formatNumber(
   number,
-  { decimalSep = '.', precision = 2, ...integerOptions } = {}
+  { decimalSep = '.', precision = 2, ...integerOptions } = {},
 ) {
   const { integer, fractional } = formatNumberParts(number, {
     precision,
-    ...integerOptions
+    ...integerOptions,
   });
 
   // Format remaining number, but adding decimal separator and decimals to
@@ -113,7 +113,7 @@ export function formatNumberForLocale(number, locale, int = false) {
   const { decimal: decimalSep, thousand: thousandSep } = getOr(
     NUMBER_SEPARATORS.default,
     locale,
-    NUMBER_SEPARATORS
+    NUMBER_SEPARATORS,
   );
   const precision = int ? 0 : 2;
   return formatNumber(number, { decimalSep, thousandSep, precision });

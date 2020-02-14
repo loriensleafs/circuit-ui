@@ -30,7 +30,7 @@ export const TRANSITION_DURATION = 200;
 export const DEFAULT_APP_ELEMENT = '#root';
 export const APP_ELEMENT_PROP_TYPE = PropTypes.oneOfType([
   PropTypes.string,
-  PropTypes.node
+  PropTypes.node,
 ]);
 
 const TOP_MARGIN = '10vh';
@@ -103,7 +103,7 @@ const modalClassName = css => ({
       opacity: 0;
       transform: translateY(${TRANSFORM_Y_FLOATING});
     }
-  `
+  `,
   /* eslint-enable max-len */
 });
 
@@ -132,7 +132,7 @@ const overlayClassName = css => ({
   beforeClose: () => css`
     label: modal__overlay--before-close;
     opacity: 0;
-  `
+  `,
 });
 
 /**
@@ -162,7 +162,7 @@ const Modal = ({
           onAfterClose: () => IS_IOS && noScroll.off(),
           onRequestClose: onClose,
           closeTimeoutMS: TRANSITION_DURATION,
-          ...props
+          ...props,
         };
         return (
           <ReactModal {...reactModalProps}>
@@ -212,12 +212,12 @@ Modal.propTypes = {
    * React portal used to display the modal. See
    * http://reactcommunity.org/react-modal/accessibility/#app-element
    */
-  appElement: APP_ELEMENT_PROP_TYPE
+  appElement: APP_ELEMENT_PROP_TYPE,
 };
 
 Modal.defaultProps = {
   contentLabel: 'Modal',
-  appElement: DEFAULT_APP_ELEMENT
+  appElement: DEFAULT_APP_ELEMENT,
 };
 
 /**

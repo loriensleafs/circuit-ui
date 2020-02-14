@@ -37,7 +37,7 @@ const baseStyles = ({ theme }) => css`
 const alignmentStyles = ({ align }) => {
   const alignments = {
     [CENTER]: 'center',
-    [TOP]: 'flex-start'
+    [TOP]: 'flex-start',
   };
   return css`
     label: ${`message__button--${align}`};
@@ -62,11 +62,11 @@ MessageButton.propTypes = {
   /**
    * Vertical alignment
    */
-  align: PropTypes.oneOf([MessageButton.TOP, MessageButton.CENTER])
+  align: PropTypes.oneOf([MessageButton.TOP, MessageButton.CENTER]),
 };
 
 MessageButton.defaultProps = {
-  align: MessageButton.CENTER
+  align: MessageButton.CENTER,
 };
 
 /**

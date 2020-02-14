@@ -31,23 +31,23 @@ export default {
   component: Select,
   parameters: {
     docs: { page: docs },
-    jest: ['Select']
-  }
+    jest: ['Select'],
+  },
 };
 
 const options = [
   {
     label: 'United States',
-    value: 'US'
+    value: 'US',
   },
   {
     label: 'Germany',
-    value: 'DE'
+    value: 'DE',
   },
   {
     label: 'France',
-    value: 'FR'
-  }
+    value: 'FR',
+  },
 ];
 const flagIconMap = { DE, US, FR };
 

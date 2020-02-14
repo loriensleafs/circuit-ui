@@ -216,7 +216,7 @@ Checkbox.propTypes = {
   /**
    * Override styles for the Checkbox component.
    */
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 Checkbox.defaultProps = {
@@ -227,7 +227,7 @@ Checkbox.defaultProps = {
   invalid: false,
   disabled: false,
   children: null,
-  className: ''
+  className: '',
 };
 
 /**

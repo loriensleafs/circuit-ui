@@ -40,7 +40,7 @@ describe('SearchInput', () => {
       <Label htmlFor="search">
         <SearchInput id="search" />
         Search
-      </Label>
+      </Label>,
     );
     const actual = await axe(wrapper);
     expect(actual).toHaveNoViolations();

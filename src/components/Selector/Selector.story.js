@@ -24,8 +24,8 @@ export default {
   component: Selector,
   parameters: {
     docs: { page: docs },
-    jest: ['Selector']
-  }
+    jest: ['Selector'],
+  },
 };
 
 /* eslint-disable react/prop-types */

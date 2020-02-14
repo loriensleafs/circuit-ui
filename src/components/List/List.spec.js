@@ -25,7 +25,7 @@ describe('List', () => {
     const list = create(
       <List>
         <li>Hi there</li>
-      </List>
+      </List>,
     );
     expect(list).toMatchSnapshot();
   });
@@ -34,7 +34,7 @@ describe('List', () => {
     const list = create(
       <List size={List.KILO}>
         <li>Hi there</li>
-      </List>
+      </List>,
     );
     expect(list).toMatchSnapshot();
   });
@@ -43,7 +43,7 @@ describe('List', () => {
     const list = create(
       <List size={List.MEGA}>
         <li>Hi there</li>
-      </List>
+      </List>,
     );
     expect(list).toMatchSnapshot();
   });
@@ -52,7 +52,7 @@ describe('List', () => {
     const list = create(
       <List size={List.GIGA}>
         <li>Hi there</li>
-      </List>
+      </List>,
     );
     expect(list).toMatchSnapshot();
   });
@@ -64,7 +64,7 @@ describe('List', () => {
         <List>
           <li>Hi there</li>
         </List>
-      </List>
+      </List>,
     );
     expect(list).toMatchSnapshot();
   });
@@ -74,7 +74,7 @@ describe('List', () => {
       <List ordered>
         <li>Hi</li>
         <li>It is me</li>
-      </List>
+      </List>,
     );
     expect(list).toMatchSnapshot();
   });
@@ -83,7 +83,7 @@ describe('List', () => {
     const actual = create(
       <List noMargin>
         <li>Hi</li>
-      </List>
+      </List>,
     );
     expect(actual).toMatchSnapshot();
   });
@@ -95,7 +95,7 @@ describe('List', () => {
     const wrapper = renderToHtml(
       <List>
         <li>Hi there</li>
-      </List>
+      </List>,
     );
     const actual = await axe(wrapper);
     expect(actual).toHaveNoViolations();

@@ -24,7 +24,7 @@ describe('numbers', () => {
       const format = {
         groupLength: 2,
         decimalSep: ',',
-        thousandSep: ' '
+        thousandSep: ' ',
       };
       const expected = '10 00,50';
       const actual = numbers.formatNumber(number, format);
@@ -36,7 +36,7 @@ describe('numbers', () => {
       const format = {
         groupLength: 2,
         decimalSep: ',',
-        thousandSep: ' '
+        thousandSep: ' ',
       };
       const expected = '10 00,50';
       const actual = numbers.formatNumber(number, format);
@@ -49,7 +49,7 @@ describe('numbers', () => {
         groupLength: 2,
         decimalSep: ',',
         thousandSep: '',
-        precision: 0
+        precision: 0,
       };
       const expected = '1000';
       const actual = numbers.formatNumber(number, format);
@@ -120,7 +120,7 @@ describe('numbers', () => {
       'ru-RU': '1\xA0000,00',
       'sl-SI': '1.000,00',
       'sk-SK': '1\xA0000,00',
-      'sv-SE': '1\xA0000,00'
+      'sv-SE': '1\xA0000,00',
     };
     locales.forEach(locale => {
       it(`should localize ${number} to ${expectedNumbers[locale]} for ${locale}.`, () => {
@@ -148,7 +148,7 @@ describe('numbers', () => {
     it('should format the integer part according to the groupLength parameter.', () => {
       const expected = '100,0000';
       const { integer: actual } = numbers.formatNumberParts(number, {
-        groupLength: 4
+        groupLength: 4,
       });
       expect(actual).toBe(expected);
     });
@@ -156,7 +156,7 @@ describe('numbers', () => {
     it('should format the integer part according to the thousandSep parameter.', () => {
       const expected = '1|000|000';
       const { integer: actual } = numbers.formatNumberParts(number, {
-        thousandSep: '|'
+        thousandSep: '|',
       });
       expect(actual).toBe(expected);
     });
@@ -164,7 +164,7 @@ describe('numbers', () => {
     it('should format the fractional part with precision 2 by default.', () => {
       const expected = 2;
       const { fractional: actual } = numbers.formatNumberParts(number, {
-        precision: expected
+        precision: expected,
       });
       expect(actual).toHaveLength(expected);
     });
@@ -172,7 +172,7 @@ describe('numbers', () => {
     it('should format the fractional part according to the precision parameter.', () => {
       const expected = 4;
       const { fractional: actual } = numbers.formatNumberParts(number, {
-        precision: expected
+        precision: expected,
       });
       expect(actual).toHaveLength(expected);
     });

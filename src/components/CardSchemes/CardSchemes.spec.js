@@ -26,7 +26,7 @@ describe('CardSchemes', () => {
    */
   it('should render with default styles', () => {
     const actual = create(
-      <CardSchemes size={CardSchemes.GIGA} iconIds={keys(schemeMap)} />
+      <CardSchemes size={CardSchemes.GIGA} iconIds={keys(schemeMap)} />,
     );
     expect(actual).toMatchSnapshot();
   });
@@ -39,7 +39,7 @@ describe('CardSchemes', () => {
     expect(iconEls).toHaveLength(2);
     iconIds.forEach((iconId, index) => {
       expect(iconEls[index].firstChild.firstChild).toHaveTextContent(
-        `${iconId}.svg`
+        `${iconId}.svg`,
       );
     });
   });
@@ -49,7 +49,7 @@ describe('CardSchemes', () => {
    */
   it('should meet accessibility guidelines', async () => {
     const wrapper = renderToHtml(
-      <CardSchemes size={CardSchemes.GIGA} iconIds={keys(schemeMap)} />
+      <CardSchemes size={CardSchemes.GIGA} iconIds={keys(schemeMap)} />,
     );
     const actual = await axe(wrapper);
     expect(actual).toHaveNoViolations();

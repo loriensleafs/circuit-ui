@@ -27,7 +27,7 @@ const RadioButtonGroup = ({
   options,
   onChange,
   value: activeValue,
-  name: customName
+  name: customName,
 }) => {
   const name = customName || uniqueId('radio-button-group_');
   return (
@@ -57,8 +57,8 @@ RadioButtonGroup.propTypes = {
       value: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
         .isRequired,
       label: PropTypes.string.isRequired,
-      disabled: PropTypes.bool
-    })
+      disabled: PropTypes.bool,
+    }),
   ).isRequired,
   /**
    * Controles/Toggles the checked state. Passed on to the RadioButtons.
@@ -71,11 +71,11 @@ RadioButtonGroup.propTypes = {
   /**
    * A unique name for the radio group.
    */
-  name: PropTypes.string
+  name: PropTypes.string,
 };
 
 RadioButtonGroup.defaultProps = {
-  name: null
+  name: null,
 };
 
 /**

@@ -66,7 +66,7 @@ const Selector = styled.div(
   baseStyles,
   hoverStyles,
   selectedStyles,
-  disabledStyles
+  disabledStyles,
 );
 
 Selector.propTypes = {
@@ -77,12 +77,12 @@ Selector.propTypes = {
   /**
    * Whether the selector is disabled or not.
    */
-  disabled: PropTypes.bool
+  disabled: PropTypes.bool,
 };
 
 Selector.defaultProps = {
   selected: false,
-  disabled: false
+  disabled: false,
 };
 
 /**

@@ -21,8 +21,8 @@ export default {
   title: 'Icons/InfoIcon',
   component: InfoIcon,
   parameters: {
-    jest: ['InfoIcon']
-  }
+    jest: ['InfoIcon'],
+  },
 };
 
 export const base = () => <InfoIcon />;

@@ -63,7 +63,7 @@ const SortArrow = ({ direction = null, condensed = false }) => (
 
 SortArrow.propTypes = {
   direction: PropTypes.oneOf([ASCENDING, DESCENDING]),
-  condensed: PropTypes.bool
+  condensed: PropTypes.bool,
 };
 
 export default SortArrow;

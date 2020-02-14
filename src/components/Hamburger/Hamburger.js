@@ -169,14 +169,14 @@ Hamburger.propTypes = {
    * A Boolean to select the Light or Dark (default) version of the Hamburger.
    */
   light: PropTypes.bool,
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 Hamburger.defaultProps = {
   onClick: () => {},
   isActive: false,
   labelActive: 'Close menu',
-  labelInActive: 'Open menu'
+  labelInActive: 'Open menu',
 };
 
 /**

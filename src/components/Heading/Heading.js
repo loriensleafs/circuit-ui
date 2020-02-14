@@ -31,7 +31,7 @@ const mobileSizeMap = {
   [TERA]: GIGA,
   [PETA]: TERA,
   [EXA]: PETA,
-  [ZETTA]: PETA
+  [ZETTA]: PETA,
 };
 
 const baseStyles = ({ theme }) => css`
@@ -61,7 +61,7 @@ const noMarginStyles = ({ noMargin }) =>
   `;
 
 const HeadingElement = styled('h2', {
-  shouldForwardProp: prop => isPropValid(prop) && prop !== 'size'
+  shouldForwardProp: prop => isPropValid(prop) && prop !== 'size',
 })`
   ${baseStyles};
   ${sizeStyles};
@@ -96,7 +96,7 @@ Heading.propTypes = {
     Heading.TERA,
     Heading.PETA,
     Heading.EXA,
-    Heading.ZETTA
+    Heading.ZETTA,
   ]),
   /**
    * Optional additional className string to overwrite styles.
@@ -109,7 +109,7 @@ Heading.propTypes = {
   /**
    * The HTML heading element to render.
    */
-  as: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6'])
+  as: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6']),
 };
 
 Heading.defaultProps = {
@@ -117,7 +117,7 @@ Heading.defaultProps = {
   size: Heading.PETA,
   className: '',
   noMargin: false,
-  children: null
+  children: null,
 };
 
 /**

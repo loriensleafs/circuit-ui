@@ -33,8 +33,8 @@ export default {
   component: Blockquote,
   parameters: {
     docs: { page: docs },
-    jest: ['Blockquote']
-  }
+    jest: ['Blockquote'],
+  },
 };
 
 export const base = () => (

@@ -24,8 +24,8 @@ export default {
   title: 'Layout/Grid/Row',
   component: Row,
   parameters: {
-    jest: ['Row']
-  }
+    jest: ['Row'],
+  },
 };
 
 const StyledCol = styled(Col)(
@@ -43,18 +43,18 @@ const StyledCol = styled(Col)(
     &:nth-of-type(2n) {
       background-color: ${theme.colors.b300};
     }
-  `
+  `,
 );
 
 StyledCol.defaultProps = {
-  skip: '0'
+  skip: '0',
 };
 
 const StyledRow = styled(Row)(
   ({ theme }) => css`
     border: 2px solid ${theme.colors.y100};
     margin-bottom: 8px;
-  `
+  `,
 );
 
 export const base = () => (

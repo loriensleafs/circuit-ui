@@ -29,8 +29,8 @@ export default {
   component: Card,
   parameters: {
     docs: { page: docs },
-    jest: ['Card']
-  }
+    jest: ['Card'],
+  },
 };
 
 const cardStyles = theme => css`

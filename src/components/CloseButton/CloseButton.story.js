@@ -22,8 +22,8 @@ export default {
   title: 'Components/Button/CloseButton',
   parameters: {
     component: CloseButton,
-    jest: ['CloseButton']
-  }
+    jest: ['CloseButton'],
+  },
 };
 
 export const base = () => <CloseButton label={text('Label', 'Close')} />;

@@ -25,7 +25,7 @@ import {
   getSortDirection,
   ascendingSort,
   descendingSort,
-  RowPropType
+  RowPropType,
 } from './utils';
 import { ASCENDING } from './constants';
 import { shadowSingle } from '../../styles/style-helpers';
@@ -144,7 +144,7 @@ class Table extends Component {
     sortHover: null,
     sortDirection: null,
     scrollTop: null,
-    tableBodyHeight: null
+    tableBodyHeight: null,
   };
 
   componentDidMount() {
@@ -174,7 +174,7 @@ class Table extends Component {
 
     window.addEventListener(
       'resize',
-      throttle(1000, this.calculateTableBodyHeight)
+      throttle(1000, this.calculateTableBodyHeight),
     );
   };
 
@@ -186,7 +186,7 @@ class Table extends Component {
     this.setState({
       tableBodyHeight: isNil(this.tableContainer)
         ? 'unset'
-        : `${this.tableContainer.parentNode.offsetHeight}px`
+        : `${this.tableContainer.parentNode.offsetHeight}px`,
     });
   };
 
@@ -222,7 +222,7 @@ class Table extends Component {
   updateSort = (i, nextDirection) =>
     this.setState({
       sortedRow: i,
-      sortDirection: nextDirection
+      sortDirection: nextDirection,
     });
 
   defaultSortBy = (i, direction, rows) => {
@@ -244,14 +244,14 @@ class Table extends Component {
       condensed,
       scrollable,
       onRowClick,
-      ...props
+      ...props,
     } = this.props;
     const {
       sortDirection,
       sortHover,
       sortedRow,
       scrollTop,
-      tableBodyHeight
+      tableBodyHeight,
     } = this.state;
 
     const rows = this.getSortedRows();
@@ -315,8 +315,8 @@ Table.propTypes = {
   rows: PropTypes.arrayOf(
     PropTypes.oneOfType([
       PropTypes.shape({ cells: PropTypes.arrayOf(RowPropType) }),
-      PropTypes.arrayOf(RowPropType)
-    ])
+      PropTypes.arrayOf(RowPropType),
+    ]),
   ),
   /**
    * Enables/disables sticky columns on mobile
@@ -348,7 +348,7 @@ Table.propTypes = {
   /**
    * Collapses the table cells.
    */
-  borderCollapsed: PropTypes.bool
+  borderCollapsed: PropTypes.bool,
 };
 
 Table.defaultProps = {
@@ -360,7 +360,7 @@ Table.defaultProps = {
   noShadow: false,
   onSortBy: null,
   onRowClick: null,
-  borderCollapsed: false
+  borderCollapsed: false,
 };
 
 export default Table;

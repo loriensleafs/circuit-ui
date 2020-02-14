@@ -24,7 +24,7 @@ import {
   isActive,
   isDisabled,
   isSuccess,
-  isError
+  isError,
 } from './LoadingButtonService';
 
 export default class LoadingButton extends Component {
@@ -37,13 +37,13 @@ export default class LoadingButton extends Component {
     isLoading: PropTypes.bool,
     exitAnimationDuration: PropTypes.oneOfType([
       PropTypes.string,
-      PropTypes.number
+      PropTypes.number,
     ]),
     exitAnimation: PropTypes.oneOf([
       LoadingButton.SUCCESS,
-      LoadingButton.ERROR
+      LoadingButton.ERROR,
     ]),
-    onAnimationComplete: PropTypes.func
+    onAnimationComplete: PropTypes.func,
   };
 
   static defaultProps = {
@@ -51,11 +51,11 @@ export default class LoadingButton extends Component {
     isLoading: false,
     exitAnimationDuration: 2000,
     exitAnimation: null,
-    onAnimationComplete: noop
+    onAnimationComplete: noop,
   };
 
   state = {
-    loadingState: DISABLED
+    loadingState: DISABLED,
   };
 
   static getDerivedStateFromProps(nextProps, prevState) {
@@ -70,14 +70,14 @@ export default class LoadingButton extends Component {
     // Component on initial disabled status
     if (isLoading && isDisabled(loadingState)) {
       return {
-        loadingState: ACTIVE
+        loadingState: ACTIVE,
       };
     }
 
     // Component on active status but finished loading
     if (!isLoading && isActive(loadingState)) {
       return {
-        loadingState: exitAnimation || DISABLED
+        loadingState: exitAnimation || DISABLED,
       };
     }
 
@@ -94,7 +94,7 @@ export default class LoadingButton extends Component {
       } else {
         this.timeout = setTimeout(
           this.onAnimationComplete,
-          exitAnimationDuration
+          exitAnimationDuration,
         );
       }
     }
@@ -114,7 +114,7 @@ export default class LoadingButton extends Component {
     }
 
     this.setState({
-      loadingState: DISABLED
+      loadingState: DISABLED,
     });
   };
 
@@ -122,7 +122,7 @@ export default class LoadingButton extends Component {
     const { loadingState } = this.state;
     const props = omit(
       ['onAnimationComplete', 'isLoading', 'exitAnimationDuration'],
-      this.props
+      this.props,
     );
     const isLoading =
       isActive(loadingState) ||

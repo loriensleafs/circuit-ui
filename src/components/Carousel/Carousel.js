@@ -21,7 +21,7 @@ import { css } from '@emotion/core';
 import Step from '../Step';
 import {
   childrenPropType,
-  childrenRenderPropType
+  childrenRenderPropType,
 } from '../../util/shared-prop-types';
 
 import Container from './components/Container';
@@ -35,7 +35,7 @@ import {
   ButtonList,
   NextButton,
   PrevButton,
-  PlayButton
+  PlayButton,
 } from './components/Buttons';
 
 import useComponentSize from '../../hooks/use-component-size';
@@ -43,7 +43,7 @@ import {
   ASPECT_RATIO,
   ANIMATION_DURATION,
   SLIDE_DURATION,
-  SLIDE_DIRECTIONS
+  SLIDE_DIRECTIONS,
 } from './constants';
 
 const statusAlignment = ({ theme }) => css`
@@ -110,7 +110,7 @@ const Carousel = ({
         getNextControlProps,
         getPreviousControlProps,
         getPlayControlProps,
-        getPauseControlProps
+        getPauseControlProps,
       }) => (
         <Container aria-label="gallery" {...props}>
           <Slides ref={slidesRef}>
@@ -142,7 +142,7 @@ const Carousel = ({
                 key={state.step}
                 paused={state.paused}
                 animationDuration={Math.round(
-                  state.stepDuration + state.animationDuration
+                  state.stepDuration + state.animationDuration,
                 )}
               />
 
@@ -184,9 +184,9 @@ Carousel.propTypes = {
          * e.g. because of slow connection, an error in the src attribute, or if the
          * user uses a screen reader.
          */
-        alt: PropTypes.string.isRequired
-      }).isRequired
-    })
+        alt: PropTypes.string.isRequired,
+      }).isRequired,
+    }),
   ),
   /**
    * Indicates duration of animation between slides (in milliseconds).
@@ -219,7 +219,7 @@ Carousel.propTypes = {
   /**
    * Add additional components inside a carousel.
    */
-  children: PropTypes.oneOfType([childrenPropType, childrenRenderPropType])
+  children: PropTypes.oneOfType([childrenPropType, childrenRenderPropType]),
 };
 
 export default Carousel;

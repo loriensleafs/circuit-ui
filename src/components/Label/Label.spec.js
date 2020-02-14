@@ -30,7 +30,7 @@ describe('Label', () => {
     const actual = create(
       <Label visuallyHidden htmlFor="some-id">
         Label
-      </Label>
+      </Label>,
     );
     expect(actual).toMatchSnapshot();
   });

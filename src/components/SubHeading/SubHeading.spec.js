@@ -25,7 +25,7 @@ describe('SubHeading', () => {
   elements.forEach(as => {
     it(`should render as ${as.toUpperCase()} element, when passed "${as}" for the element prop`, () => {
       const heading = create(
-        <SubHeading as={as}>{`${as.toUpperCase()} heading`}</SubHeading>
+        <SubHeading as={as}>{`${as.toUpperCase()} heading`}</SubHeading>,
       );
       expect(heading).toMatchSnapshot();
     });
@@ -35,7 +35,7 @@ describe('SubHeading', () => {
   sizes.forEach(size => {
     it(`should render with size ${size}, when passed "${size}" for the size prop`, () => {
       const heading = create(
-        <SubHeading {...{ size }}>{`${size} heading`}</SubHeading>
+        <SubHeading {...{ size }}>{`${size} heading`}</SubHeading>,
       );
       expect(heading).toMatchSnapshot();
     });

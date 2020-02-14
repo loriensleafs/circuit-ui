@@ -39,7 +39,7 @@ import {
   TextArea,
   Toggle,
   theme,
-  styleConstants
+  styleConstants,
 } from '../../src';
 
 const { circuit } = theme;
@@ -59,14 +59,14 @@ export const PropTypes = {
       return [element];
     }
     return null;
-  }
+  },
 };
 
 const requiredPropTypes = {
   string: 'string',
   bool: true,
   func: () => {},
-  element
+  element,
 };
 
 function getVariations(name, prop, propOverrides) {
@@ -89,8 +89,8 @@ function getProps(props, propOverrides) {
       console.warn(
         [
           `No variations found for prop "${name}" of type "${type}"`,
-          'Please provide a custom override.'
-        ].join(' ')
+          'Please provide a custom override.',
+        ].join(' '),
       );
       return acc;
     }
@@ -114,7 +114,7 @@ export function getComponentInfo(component, propOverrides = {}) {
     component,
     name: kebabCase(displayName),
     props: getProps(props, propOverrides),
-    requiredProps: getRequiredProps(props)
+    requiredProps: getRequiredProps(props),
   };
 }
 
@@ -126,23 +126,23 @@ export default {
       component: Badge,
       props: {
         color: values(colorNames),
-        circle: PropTypes.bool
-      }
+        circle: PropTypes.bool,
+      },
     },
     getComponentInfo(Button, { size: [KILO, MEGA, GIGA] }),
     getComponentInfo(Blockquote, {
-      size: [Blockquote.KILO, Blockquote.MEGA, Blockquote.GIGA]
+      size: [Blockquote.KILO, Blockquote.MEGA, Blockquote.GIGA],
     }),
     getComponentInfo(ButtonGroup, {
-      align: [ButtonGroup.LEFT, ButtonGroup.CENTER, ButtonGroup.RIGHT]
+      align: [ButtonGroup.LEFT, ButtonGroup.CENTER, ButtonGroup.RIGHT],
     }),
     {
       name: 'card',
       component: Card,
       props: {
         shadow: [Card.SINGLE, Card.DOUBLE, Card.TRIPLE],
-        spacing: [Card.MEGA, Card.GIGA]
-      }
+        spacing: [Card.MEGA, Card.GIGA],
+      },
     },
     getComponentInfo(Checkbox),
     getComponentInfo(Hamburger),
@@ -154,19 +154,19 @@ export default {
         Heading.TERA,
         Heading.PETA,
         Heading.EXA,
-        Heading.ZETTA
-      ]
+        Heading.ZETTA,
+      ],
     }),
     { name: 'hr', component: Hr },
     { name: 'image', component: Image },
     getComponentInfo(Input, {
       renderPrefix: PropTypes.element,
       renderSuffix: PropTypes.element,
-      textAlign: [Input.LEFT, Input.RIGHT]
+      textAlign: [Input.LEFT, Input.RIGHT],
     }),
     getComponentInfo(Label),
     getComponentInfo(List, {
-      size: [List.KILO, List.MEGA, List.GIGA]
+      size: [List.KILO, List.MEGA, List.GIGA],
     }),
     // TODO: Need to eliminate dynamic styles.
     // getComponentInfo(ProgressBar, {
@@ -174,20 +174,20 @@ export default {
     // }),
     getComponentInfo(RadioButton),
     getComponentInfo(Select, {
-      renderPrefix: PropTypes.element
+      renderPrefix: PropTypes.element,
     }),
     { name: 'selector', component: Selector },
     getComponentInfo(SubHeading, {
-      size: [SubHeading.KILO, SubHeading.MEGA]
+      size: [SubHeading.KILO, SubHeading.MEGA],
     }),
     getComponentInfo(Tag, {
       icon: PropTypes.element,
-      onRemove: PropTypes.func
+      onRemove: PropTypes.func,
     }),
     getComponentInfo(Text, {
-      size: [Text.KILO, Text.MEGA, Text.GIGA]
+      size: [Text.KILO, Text.MEGA, Text.GIGA],
     }),
     getComponentInfo(TextArea),
-    getComponentInfo(Toggle)
-  ]
+    getComponentInfo(Toggle),
+  ],
 };

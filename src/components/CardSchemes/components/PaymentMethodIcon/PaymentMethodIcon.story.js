@@ -25,15 +25,15 @@ const iconSizes = [
   PaymentMethodIcon.BYTE,
   PaymentMethodIcon.KILO,
   PaymentMethodIcon.MEGA,
-  PaymentMethodIcon.GIGA
+  PaymentMethodIcon.GIGA,
 ];
 
 export default {
   title: 'Icons/PaymentMethodIcon',
   component: PaymentMethodIcon,
   parameters: {
-    jest: ['PaymentMethodIcon']
-  }
+    jest: ['PaymentMethodIcon'],
+  },
 };
 
 export const base = () => (

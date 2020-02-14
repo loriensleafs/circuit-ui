@@ -29,7 +29,7 @@ describe('PaginationContainer', () => {
             onChange={identity}
           >
             Children Element
-          </PaginationContainer>
+          </PaginationContainer>,
         );
         expect(component).toMatchSnapshot();
       });
@@ -45,7 +45,7 @@ describe('PaginationContainer', () => {
             onChange={identity}
           >
             Children Element
-          </PaginationContainer>
+          </PaginationContainer>,
         );
         expect(component).toMatchSnapshot();
       });
@@ -61,7 +61,7 @@ describe('PaginationContainer', () => {
             onChange={identity}
           >
             Children Element
-          </PaginationContainer>
+          </PaginationContainer>,
         );
         expect(component).toMatchSnapshot();
       });
@@ -81,7 +81,7 @@ describe('PaginationContainer', () => {
             onChange={onChange}
           >
             Children Element
-          </PaginationContainer>
+          </PaginationContainer>,
         );
 
         act(() => {
@@ -105,7 +105,7 @@ describe('PaginationContainer', () => {
             onChange={onChange}
           >
             Children Element
-          </PaginationContainer>
+          </PaginationContainer>,
         );
 
         act(() => {

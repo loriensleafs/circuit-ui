@@ -21,15 +21,15 @@ import TableCell from '.';
 const options = {
   [TableCell.LEFT]: TableCell.LEFT,
   [TableCell.RIGHT]: TableCell.RIGHT,
-  [TableCell.CENTER]: TableCell.CENTER
+  [TableCell.CENTER]: TableCell.CENTER,
 };
 
 export default {
   title: 'Components/Table/TableCell',
   component: TableCell,
   parameters: {
-    jest: ['TableCell']
-  }
+    jest: ['TableCell'],
+  },
 };
 
 export const base = () => (

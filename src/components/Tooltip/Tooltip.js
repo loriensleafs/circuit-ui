@@ -22,7 +22,7 @@ import { textKilo, shadowSingle } from '../../styles/style-helpers';
 import { CENTER, TOP, RIGHT, BOTTOM, LEFT } from '../../util/constants';
 import {
   positionPropType,
-  childrenPropType
+  childrenPropType,
 } from '../../util/shared-prop-types';
 
 const baseStyles = ({ theme }) => css`
@@ -55,7 +55,7 @@ const positionMap = {
   [TOP]: 'bottom',
   [RIGHT]: 'left',
   [BOTTOM]: 'top',
-  [LEFT]: 'right'
+  [LEFT]: 'right',
 };
 
 const getPositionStyles = ({ theme, position }) => {
@@ -151,13 +151,13 @@ Tooltip.propTypes = {
     Tooltip.RIGHT,
     Tooltip.BOTTOM,
     Tooltip.LEFT,
-    Tooltip.CENTER
-  ])
+    Tooltip.CENTER,
+  ]),
 };
 
 Tooltip.defaultProps = {
   position: Tooltip.RIGHT,
-  align: Tooltip.CENTER
+  align: Tooltip.CENTER,
 };
 
 /**

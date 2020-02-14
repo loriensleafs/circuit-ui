@@ -25,8 +25,8 @@ export default {
   component: InlineNotification,
   parameters: {
     docs: { page: docs },
-    jest: ['InlineNotification']
-  }
+    jest: ['InlineNotification'],
+  },
 };
 
 export const base = () => (

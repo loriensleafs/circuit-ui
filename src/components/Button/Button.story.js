@@ -24,8 +24,8 @@ export default {
   component: Button,
   parameters: {
     docs: { page: docs },
-    jest: ['Button']
-  }
+    jest: ['Button'],
+  },
 };
 
 export const base = () => (

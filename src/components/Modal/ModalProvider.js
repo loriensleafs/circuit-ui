@@ -20,19 +20,19 @@ import { childrenPropType } from '../../util/shared-prop-types';
 
 const { Provider: ContextProvider, Consumer: ModalConsumer } = createContext({
   setModal: () => {},
-  getModal: () => {}
+  getModal: () => {},
 });
 
 export { ModalConsumer };
 
 export class ModalProvider extends Component {
   static propTypes = {
-    children: childrenPropType.isRequired
+    children: childrenPropType.isRequired,
   };
 
   state = {
     modal: null,
-    isOpen: false
+    isOpen: false,
   };
 
   componentDidUpdate(prevProps, { isOpen: prevIsOpen }) {
@@ -49,7 +49,7 @@ export class ModalProvider extends Component {
     this.setState(prevState => ({
       ...prevState,
       modal: { ...prevState.modal, ...config },
-      isOpen: true
+      isOpen: true,
     }));
   };
 
@@ -57,14 +57,14 @@ export class ModalProvider extends Component {
     window.onpopstate = null;
     this.setState(prevState => ({
       ...prevState,
-      isOpen: false
+      isOpen: false,
     }));
   };
 
   // eslint-disable-next-line react/sort-comp
   contextValue = {
     setModal: this.setModal,
-    getModal: () => this.state.modal
+    getModal: () => this.state.modal,
   };
 
   render() {
@@ -81,7 +81,7 @@ export class ModalProvider extends Component {
           isOpen,
           ...otherProps,
           children: () => children({ onClose: handleClose }),
-          onClose: handleClose
+          onClose: handleClose,
         }
       : { isOpen, onClose, children: () => null };
 

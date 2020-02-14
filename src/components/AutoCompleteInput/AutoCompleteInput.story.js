@@ -28,8 +28,8 @@ export default {
   component: AutoCompleteInput,
   parameters: {
     docs: { page: docs },
-    jest: ['AutoCompleteInput']
-  }
+    jest: ['AutoCompleteInput'],
+  },
 };
 
 // Inputs always need labels for accessibility.
@@ -48,7 +48,7 @@ export const base = () => (
     items={[
       'liam.murphy@sumup.com',
       'liam.burdock@sumup.com',
-      'lilijane.giordano@sumup.com'
+      'lilijane.giordano@sumup.com',
     ]}
     onChange={action('handleChange')}
     clearOnSelect={boolean('clearOnSelect', false)}

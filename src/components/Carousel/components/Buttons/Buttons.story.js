@@ -24,8 +24,8 @@ export default {
   title: 'Components/Carousel/Buttons',
   component: Buttons,
   parameters: {
-    jest: ['Carousel/Buttons']
-  }
+    jest: ['Carousel/Buttons'],
+  },
 };
 
 export const allButtons = () => (

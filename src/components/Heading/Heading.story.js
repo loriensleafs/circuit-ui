@@ -27,7 +27,7 @@ const sizes = [
   Heading.TERA,
   Heading.GIGA,
   Heading.MEGA,
-  Heading.KILO
+  Heading.KILO,
 ];
 
 export default {
@@ -35,8 +35,8 @@ export default {
   component: Heading,
   parameters: {
     docs: { page: docs },
-    jest: ['Heading']
-  }
+    jest: ['Heading'],
+  },
 };
 
 export const base = () => (

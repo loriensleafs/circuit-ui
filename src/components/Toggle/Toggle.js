@@ -112,13 +112,13 @@ Toggle.propTypes = {
   /**
    * Removes the default bottom margin from the input.
    */
-  noMargin: PropTypes.bool
+  noMargin: PropTypes.bool,
 };
 
 Toggle.defaultProps = {
   label: null,
   explanation: null,
-  noMargin: false
+  noMargin: false,
 };
 
 /**

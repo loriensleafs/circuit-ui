@@ -23,7 +23,7 @@ import { childrenPropType } from '../../../../util/shared-prop-types';
 const Link = ({ children, ...props }) => <a {...props}>{children}</a>;
 
 Link.propTypes = {
-  children: childrenPropType
+  children: childrenPropType,
 };
 
 /**

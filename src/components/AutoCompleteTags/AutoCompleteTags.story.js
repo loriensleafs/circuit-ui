@@ -22,8 +22,8 @@ export default {
   title: 'Forms/Input/AutoCompleteTags',
   component: AutoCompleteTags,
   parameters: {
-    jest: ['AutoCompleteTags']
-  }
+    jest: ['AutoCompleteTags'],
+  },
 };
 
 const randomItems = [];

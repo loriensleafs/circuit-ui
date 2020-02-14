@@ -27,7 +27,7 @@ import {
   __,
   sortBy,
   identity,
-  reverse
+  reverse,
 } from 'lodash/fp';
 
 export const calculatePages = (totalItems, perPage) =>
@@ -57,7 +57,7 @@ export const arrayOfPreviousValues = (page, totalPages) => {
   const availablePages = availablePreviousPages(page, totalPages);
 
   const pages = Array.from({ length: availablePages }).map(
-    (item, index) => page - (index + 1)
+    (item, index) => page - (index + 1),
   );
 
   return reverse(pages);
@@ -71,7 +71,7 @@ export const arrayOfNextValues = (page, totalPages) => {
   const availablePages = availableNextPages(page);
 
   return Array.from({ length: availablePages }).map(
-    (item, index) => page + (index + 1)
+    (item, index) => page + (index + 1),
   );
 };
 
@@ -84,7 +84,7 @@ export const hasOmittedPreviousPages = previousValues => {
     gt(__, 1),
     subtract(__, 1),
     first,
-    sortBy(identity)
+    sortBy(identity),
   )(previousValues);
 };
 
@@ -97,6 +97,6 @@ export const hasOmittedNextPages = (nextValues, totalPages) => {
     lt(__, totalPages),
     add(1),
     last,
-    sortBy(identity)
+    sortBy(identity),
   )(nextValues);
 };

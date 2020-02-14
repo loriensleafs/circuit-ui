@@ -158,7 +158,7 @@ TableHeader.propTypes = {
   align: PropTypes.oneOf([
     TableHeader.LEFT,
     TableHeader.RIGHT,
-    TableHeader.CENTER
+    TableHeader.CENTER,
   ]),
   /**
    * @private Adds ROL or COL styles based on the provided Scope.
@@ -191,7 +191,7 @@ TableHeader.propTypes = {
    * @private Adds sorted style to the Header if it is currently sorted
    * Handled internally
    */
-  isSorted: PropTypes.bool
+  isSorted: PropTypes.bool,
 };
 
 TableHeader.defaultProps = {
@@ -203,7 +203,7 @@ TableHeader.defaultProps = {
   'children': null,
   'sortDirection': null,
   'isSorted': false,
-  'data-testid': 'table-header'
+  'data-testid': 'table-header',
 };
 
 export default TableHeader;

@@ -22,7 +22,7 @@ describe('hasSelectedChild', () => {
     const children = [
       { props: { selected: false } },
       { props: { selected: true } },
-      { props: { selected: false } }
+      { props: { selected: false } },
     ];
 
     const hasSelected = hasSelectedChild(children);
@@ -33,7 +33,7 @@ describe('hasSelectedChild', () => {
     const children = [
       { props: { selected: false } },
       { props: { selected: false } },
-      { props: { selected: false } }
+      { props: { selected: false } },
     ];
 
     const hasSelected = hasSelectedChild(children);
@@ -68,7 +68,7 @@ describe('getIcon', () => {
 
     it('should not return the disabled icon', () => {
       const icon = getIcon({
-        disabled: true
+        disabled: true,
       });
       expect(icon).toBeNull();
     });
@@ -79,7 +79,7 @@ describe('getIcon', () => {
       it('should return the disabled icon', () => {
         const icon = getIcon({
           defaultIcon: mockDefaultIcon,
-          disabled: true
+          disabled: true,
         });
         expect(icon).toStrictEqual(disabledIcon);
       });
@@ -89,7 +89,7 @@ describe('getIcon', () => {
       describe("if the item isn't selected", () => {
         it('should return the default icon', () => {
           const icon = getIcon({
-            defaultIcon: mockDefaultIcon
+            defaultIcon: mockDefaultIcon,
           });
           expect(icon).toBe(mockDefaultIcon);
         });
@@ -100,7 +100,7 @@ describe('getIcon', () => {
           const icon = getIcon({
             defaultIcon: mockDefaultIcon,
             selected: true,
-            selectedIcon: mockSelectedIcon
+            selectedIcon: mockSelectedIcon,
           });
           expect(icon).toBe(mockSelectedIcon);
         });
@@ -108,7 +108,7 @@ describe('getIcon', () => {
         it('should return the default icon if there is no selected icon', () => {
           const icon = getIcon({
             defaultIcon: mockDefaultIcon,
-            selected: true
+            selected: true,
           });
           expect(icon).toBe(mockDefaultIcon);
         });

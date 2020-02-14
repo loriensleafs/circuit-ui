@@ -30,8 +30,8 @@ export default {
   component: Text,
   parameters: {
     docs: { page: docs },
-    jest: ['Text']
-  }
+    jest: ['Text'],
+  },
 };
 
 export const base = () => (

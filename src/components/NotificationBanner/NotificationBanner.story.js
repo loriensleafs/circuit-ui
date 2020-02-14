@@ -24,8 +24,8 @@ export default {
   title: 'Components/Message/NotificationBanner',
   component: NotificationBanner,
   parameters: {
-    jest: ['NotificationBanner']
-  }
+    jest: ['NotificationBanner'],
+  },
 };
 
 export const base = () => (

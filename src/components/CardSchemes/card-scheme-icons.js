@@ -63,7 +63,7 @@ export const iconComponents = {
   nfc: Nfc,
   unionPay: UnionPay,
   redCompra: RedCompra,
-  default: Unknown
+  default: Unknown,
 };
 
 const accessibleIconComponents = flow(
@@ -75,10 +75,10 @@ const accessibleIconComponents = flow(
         return (
           <IconComponent aria-label={`icon ${name}`} role="img" {...props} />
         );
-      }
+      },
     }),
-    {}
-  )
+    {},
+  ),
 )(iconComponents);
 
 export default accessibleIconComponents;

@@ -26,8 +26,8 @@ import Text from '../Text';
 export default {
   title: 'Components/Modal/Embedded',
   parameters: {
-    jest: ['Modal']
-  }
+    jest: ['Modal'],
+  },
 };
 
 export const base = () => <ModalWrapper>Hello World!</ModalWrapper>;

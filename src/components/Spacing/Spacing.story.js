@@ -22,8 +22,8 @@ export default {
   title: 'Layout/Spacing',
   component: Spacing,
   parameters: {
-    jest: ['Spacing']
-  }
+    jest: ['Spacing'],
+  },
 };
 
 export const bottomSpacing = () => (

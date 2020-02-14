@@ -68,12 +68,12 @@ describe('Style helpers', () => {
   describe('media queries', () => {
     const queries = {
       breakpoint: 1024,
-      mediaExpression: '(max-width: 360px) and (min-height: 740px)'
+      mediaExpression: '(max-width: 360px) and (min-height: 740px)',
     };
 
     it('should create an object of media query strings', () => {
       const input = {
-        anExpression: ''
+        anExpression: '',
       };
 
       const actual = StyleHelpers.createMediaQueries(input).anExpression;

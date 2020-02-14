@@ -28,21 +28,21 @@ describe('InlineNotification', () => {
 
   it('should render with success styles', () => {
     const actual = create(
-      <InlineNotification type={InlineNotification.SUCCESS} />
+      <InlineNotification type={InlineNotification.SUCCESS} />,
     );
     expect(actual).toMatchSnapshot();
   });
 
   it('should render with warning styles', () => {
     const actual = create(
-      <InlineNotification type={InlineNotification.WARNING} />
+      <InlineNotification type={InlineNotification.WARNING} />,
     );
     expect(actual).toMatchSnapshot();
   });
 
   it('should render with danger styles', () => {
     const actual = create(
-      <InlineNotification type={InlineNotification.DANGER} />
+      <InlineNotification type={InlineNotification.DANGER} />,
     );
     expect(actual).toMatchSnapshot();
   });
@@ -52,7 +52,7 @@ describe('InlineNotification', () => {
       <InlineNotification
         type={InlineNotification.DANGER}
         size={InlineNotification.GIGA}
-      />
+      />,
     );
     expect(actual).toMatchSnapshot();
   });

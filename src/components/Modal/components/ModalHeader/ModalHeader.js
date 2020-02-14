@@ -43,11 +43,11 @@ ModalHeader.propTypes = {
    * Text label for the close button for screen readers.
    * Important for accessibility.
    */
-  labelCloseButton: PropTypes.string
+  labelCloseButton: PropTypes.string,
 };
 
 ModalHeader.defaultProps = {
-  onClose: null
+  onClose: null,
 };
 
 /**

@@ -22,8 +22,8 @@ export default {
   title: 'Components/Carousel/Status',
   component: Status,
   parameters: {
-    jest: ['Carousel/Status']
-  }
+    jest: ['Carousel/Status'],
+  },
 };
 
 export const base = () => (

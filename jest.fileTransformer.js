@@ -24,5 +24,5 @@ module.exports = {
         ReactComponent: props => React.createElement('div', props, '${name}')
       }
     `;
-  }
+  },
 };

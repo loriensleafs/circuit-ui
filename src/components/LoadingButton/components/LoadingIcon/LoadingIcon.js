@@ -60,7 +60,7 @@ const sizeStyles = label => ({ theme, size }) => {
   const sizeMap = {
     [KILO]: theme.spacings.mega,
     [MEGA]: theme.spacings.giga,
-    [GIGA]: theme.spacings.tera
+    [GIGA]: theme.spacings.tera,
   };
 
   const sizeValue = sizeMap[size] || sizeMap.GIGA;
@@ -88,7 +88,7 @@ const Icon = styled.div`
 
 const IconContainer = styled.div(
   sizeStyles('loading-icon__status'),
-  centeredStyles
+  centeredStyles,
 );
 
 /**
@@ -97,7 +97,7 @@ const IconContainer = styled.div(
 
 const Spinner = styled(PureSpinner)(
   sizeStyles('loading-icon__spinner'),
-  centeredStyles
+  centeredStyles,
 );
 
 // TODO: add ARIA labels to icon.
@@ -112,12 +112,12 @@ StatusIcon.propTypes = {
    * Size prop from the Button.
    */
   as: PropTypes.oneOf([SuccessSvg, ErrorSvg]),
-  size: SIZE_PROP_TYPE
+  size: SIZE_PROP_TYPE,
 };
 
 StatusIcon.defaultProps = {
   as: SuccessSvg,
-  size: GIGA
+  size: GIGA,
 };
 
 /**
@@ -140,7 +140,7 @@ LoadingIcon.propTypes = {
   /**
    * Size prop from the Button.
    */
-  size: PropTypes.string.isRequired
+  size: PropTypes.string.isRequired,
 };
 
 /**

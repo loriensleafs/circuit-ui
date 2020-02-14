@@ -22,8 +22,8 @@ export default {
   title: 'Components/Calendar/CalendarTag',
   component: CalendarTag,
   parameters: {
-    jest: ['CalendarTag']
-  }
+    jest: ['CalendarTag'],
+  },
 };
 
 export const base = () => (

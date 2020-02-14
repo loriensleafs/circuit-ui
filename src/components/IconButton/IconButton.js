@@ -73,7 +73,7 @@ IconButton.propTypes = {
   /**
    * Visually hidden text label for screen readers. Crucial for accessibility.
    */
-  label: PropTypes.string.isRequired
+  label: PropTypes.string.isRequired,
 };
 
 /**

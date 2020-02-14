@@ -27,8 +27,8 @@ export default {
   title: 'Components/AspectRatio',
   component: AspectRatio,
   parameters: {
-    jest: ['AspectRatio']
-  }
+    jest: ['AspectRatio'],
+  },
 };
 
 export const base = () => (

@@ -31,7 +31,7 @@ describe('CurrencyInput', () => {
       <Label htmlFor="id">
         Label
         <CurrencyInput id="id" locale="de-DE" currency="EUR" />
-      </Label>
+      </Label>,
     );
     const actual = await axe(wrapper);
     expect(actual).toHaveNoViolations();

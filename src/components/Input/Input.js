@@ -219,7 +219,7 @@ const validationIconActiveStyles = ({ invalid, hasWarning, showValid }) =>
 
 const ValidationIconWrapper = styled('div')(
   validationIconBaseStyles,
-  validationIconActiveStyles
+  validationIconActiveStyles,
 );
 
 const iconStyles = type => css`
@@ -235,7 +235,7 @@ const ValidationIcon = ({
   hasWarning,
   showValid,
   disabled,
-  className
+  className,
 }) => {
   if (disabled) {
     return null;
@@ -244,7 +244,7 @@ const ValidationIcon = ({
   const icons = [
     invalid && <ErrorIcon role="img" css={iconStyles('error')} />,
     hasWarning && <WarningIcon role="img" css={iconStyles('warning')} />,
-    showValid && <ValidIcon role="img" css={iconStyles('valid')} />
+    showValid && <ValidIcon role="img" css={iconStyles('valid')} />,
   ];
 
   const icon = find(identity, icons);
@@ -297,7 +297,7 @@ const StyledInput = ({
         inline,
         disabled,
         className: wrapperClassName,
-        css: wrapperStyles
+        css: wrapperStyles,
       }}
     >
       {prefix}
@@ -312,7 +312,7 @@ const StyledInput = ({
           hasPrefix: !!prefix,
           hasSuffix: !!suffix,
           className: inputClassName,
-          css: inputStyles
+          css: inputStyles,
         }}
         aria-invalid={invalid}
       />
@@ -401,7 +401,7 @@ Input.propTypes = {
    * DOM node to be forwarded to the actual input being rendered by
    * styled.
    */
-  deepRef: PropTypes.func
+  deepRef: PropTypes.func,
 };
 
 StyledInput.propTypes = Input.propTypes;
@@ -421,7 +421,7 @@ Input.defaultProps = {
   inline: false,
   noMargin: false,
   deepRef: undefined,
-  textAlign: Input.LEFT
+  textAlign: Input.LEFT,
 };
 
 /**

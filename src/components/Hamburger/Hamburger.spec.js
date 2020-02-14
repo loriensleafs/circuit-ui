@@ -37,7 +37,7 @@ describe('Hamburger', () => {
   it('should call the onClick prop when clicked', () => {
     const onClickMock = jest.fn();
     const { getByTestId } = render(
-      <Hamburger onClick={onClickMock} data-testid="hamburger" />
+      <Hamburger onClick={onClickMock} data-testid="hamburger" />,
     );
 
     act(() => {

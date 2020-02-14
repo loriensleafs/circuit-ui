@@ -30,8 +30,8 @@ export default {
   component: Modal,
   parameters: {
     docs: { page: docs },
-    jest: ['Modal', 'ModalWrapper', 'ModalHeader', 'ModalFooter']
-  }
+    jest: ['Modal', 'ModalWrapper', 'ModalHeader', 'ModalFooter'],
+  },
 };
 
 /* eslint-disable react/display-name, react/prop-types */
@@ -57,7 +57,7 @@ const defaultModal = {
   children: () => <ModalWrapper>Hello World!</ModalWrapper>,
   onClose: e => {
     action('Modal closed')(e);
-  }
+  },
 };
 
 export const base = () => <PageWithModal modal={defaultModal} />;
@@ -71,7 +71,7 @@ export const withHeader = () => (
           <ModalHeader title="A modal" />
           <Text>Some text in the modal body.</Text>
         </ModalWrapper>
-      )
+      ),
     }}
   />
 );
@@ -83,7 +83,7 @@ export const withoutCloseButton = () => {
       <ModalWrapper>
         <Text>Some text in the modal body.</Text>
       </ModalWrapper>
-    )
+    ),
   };
   return <PageWithModal modal={modalWithTitleAndCloser} />;
 };
@@ -97,7 +97,7 @@ export const withTitleAndCloseButton = () => (
           <ModalHeader title="A modal" onClose={onClose} />
           <Text>Some text in the modal body.</Text>
         </ModalWrapper>
-      )
+      ),
     }}
   />
 );
@@ -133,7 +133,7 @@ export const withFooter = () => (
             </ButtonGroup>
           </ModalFooter>
         </ModalWrapper>
-      )
+      ),
     }}
   />
 );
@@ -182,7 +182,7 @@ export const withCustomStyles = () => {
               <RightColumn />
             </Container>
           </div>
-        )
+        ),
       }}
     />
   );

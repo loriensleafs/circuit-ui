@@ -29,7 +29,7 @@ const { KILO, MEGA, GIGA } = sizes;
 const sizeMap = {
   [KILO]: 'kilo',
   [MEGA]: 'mega',
-  [GIGA]: 'giga'
+  [GIGA]: 'giga',
 };
 
 const baseStyles = ({ theme }) => css`
@@ -98,7 +98,7 @@ const Item = styled('div')(
   baseStyles,
   paddingStyles,
   selectedStyles,
-  hoverStyles
+  hoverStyles,
 );
 
 Item.propTypes = {
@@ -113,13 +113,13 @@ Item.propTypes = {
   /**
    * Content of the list item.
    */
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 Item.defaultProps = {
   padding: GIGA,
   selected: false,
-  tabIndex: 0
+  tabIndex: 0,
 };
 
 /**
@@ -130,5 +130,5 @@ export default flow(
   withAriaSelected,
   setStatic('KILO', KILO),
   setStatic('MEGA', MEGA),
-  setStatic('GIGA', GIGA)
+  setStatic('GIGA', GIGA),
 )(Item);

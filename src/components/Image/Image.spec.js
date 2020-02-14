@@ -26,7 +26,7 @@ describe('Image', () => {
       <Image
         src="http://www.placepuppy.net/1p/800/500"
         alt="A random cute puppy"
-      />
+      />,
     );
     expect(actual).toMatchSnapshot();
   });
@@ -39,7 +39,7 @@ describe('Image', () => {
       <Image
         src="http://www.placepuppy.net/1p/800/500"
         alt="A random cute puppy"
-      />
+      />,
     );
     const actual = await axe(wrapper);
     expect(actual).toHaveNoViolations();

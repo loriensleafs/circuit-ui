@@ -25,21 +25,21 @@ describe('SimpleCurrencyInput', () => {
    */
   it('should render with default styles', () => {
     const actual = create(
-      <SimpleCurrencyInput symbol={CURRENCY_SYMBOLS.EUR} />
+      <SimpleCurrencyInput symbol={CURRENCY_SYMBOLS.EUR} />,
     );
     expect(actual).toMatchSnapshot();
   });
 
   it('should render with warning styles', () => {
     const actual = create(
-      <SimpleCurrencyInput symbol={CURRENCY_SYMBOLS.EUR} hasWarning />
+      <SimpleCurrencyInput symbol={CURRENCY_SYMBOLS.EUR} hasWarning />,
     );
     expect(actual).toMatchSnapshot();
   });
 
   it('should render with error styles', () => {
     const actual = create(
-      <SimpleCurrencyInput symbol={CURRENCY_SYMBOLS.EUR} invalid />
+      <SimpleCurrencyInput symbol={CURRENCY_SYMBOLS.EUR} invalid />,
     );
     expect(actual).toMatchSnapshot();
   });
@@ -56,7 +56,10 @@ describe('SimpleCurrencyInput', () => {
 
   it('should adjust input padding and postfix width to match currency symbol width', () => {
     const actual = create(
-      <SimpleCurrencyInput placeholder="123,45" symbol={CURRENCY_SYMBOLS.CHF} />
+      <SimpleCurrencyInput
+        placeholder="123,45"
+        symbol={CURRENCY_SYMBOLS.CHF}
+      />,
     );
     expect(actual).toMatchSnapshot();
   });
@@ -67,7 +70,7 @@ describe('SimpleCurrencyInput', () => {
         symbol={CURRENCY_SYMBOLS.USD}
         placeholder="123.45"
         prependSymbol
-      />
+      />,
     );
     expect(actual).toMatchSnapshot();
   });
@@ -80,7 +83,7 @@ describe('SimpleCurrencyInput', () => {
       <Label htmlFor="id">
         Label
         <SimpleCurrencyInput id="id" symbol={CURRENCY_SYMBOLS.USD} />
-      </Label>
+      </Label>,
     );
     const actual = await axe(wrapper);
     expect(actual).toHaveNoViolations();

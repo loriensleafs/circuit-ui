@@ -103,11 +103,11 @@ export default class AutoCompleteInput extends Component {
     /**
      * Array of items (strings) the can be selected
      */
-    items: PropTypes.arrayOf(PropTypes.string).isRequired
+    items: PropTypes.arrayOf(PropTypes.string).isRequired,
   };
 
   static defaultProps = {
-    clearOnSelect: false
+    clearOnSelect: false,
   };
 
   handleChange = value => {
@@ -137,7 +137,7 @@ export default class AutoCompleteInput extends Component {
           getItemProps,
           inputValue,
           isOpen,
-          highlightedIndex
+          highlightedIndex,
         }) => {
           const filteredItems = items
             .filter(filterItems(inputValue))
@@ -155,7 +155,7 @@ export default class AutoCompleteInput extends Component {
                   <Items spacing={Card.MEGA}>
                     {filteredItems.map((item, index) => {
                       const { value, children = value, ...rest } = isString(
-                        item
+                        item,
                       )
                         ? { value: item, children: item }
                         : item;

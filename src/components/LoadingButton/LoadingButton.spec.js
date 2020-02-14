@@ -32,7 +32,7 @@ describe('LoadingButton', () => {
 
     it('should render with default styles after loading has finished', async () => {
       const { rerender, container } = render(
-        <LoadingButton isLoading={true} />
+        <LoadingButton isLoading={true} />,
       );
 
       rerender(<LoadingButton isLoading={false} />);
@@ -49,7 +49,7 @@ describe('LoadingButton', () => {
       const prevState = { loadingState: DISABLED };
       const actual = LoadingButton.getDerivedStateFromProps(
         nextProps,
-        prevState
+        prevState,
       );
       const expected = { loadingState: ACTIVE };
 
@@ -63,7 +63,7 @@ describe('LoadingButton', () => {
       it('should update the state to DISABLED when there is no exit animation', () => {
         const actual = LoadingButton.getDerivedStateFromProps(
           nextProps,
-          prevState
+          prevState,
         );
         const expected = { loadingState: DISABLED };
 
@@ -73,7 +73,7 @@ describe('LoadingButton', () => {
       it('should update the state to SUCCESS when there is a success animation', () => {
         const actual = LoadingButton.getDerivedStateFromProps(
           { ...nextProps, exitAnimation: LoadingButton.SUCCESS },
-          prevState
+          prevState,
         );
         const expected = { loadingState: SUCCESS };
 
@@ -84,7 +84,7 @@ describe('LoadingButton', () => {
         const actual = LoadingButton.getDerivedStateFromProps(
           { ...nextProps, exitAnimation: LoadingButton.ERROR },
 
-          prevState
+          prevState,
         );
         const expected = { loadingState: ERROR };
 
@@ -100,14 +100,14 @@ describe('LoadingButton', () => {
         <LoadingButton
           isLoading={true}
           onAnimationComplete={onAnimationCompleteMock}
-        />
+        />,
       );
 
       rerender(
         <LoadingButton
           isLoading={false}
           onAnimationComplete={onAnimationCompleteMock}
-        />
+        />,
       );
 
       await wait();
@@ -119,7 +119,7 @@ describe('LoadingButton', () => {
   describe('Accessibility tests', () => {
     it('should meet accessibility guidelines', async () => {
       const wrapper = renderToHtml(
-        <LoadingButton>Loading Button</LoadingButton>
+        <LoadingButton>Loading Button</LoadingButton>,
       );
       const actual = await axe(wrapper);
       expect(actual).toHaveNoViolations();

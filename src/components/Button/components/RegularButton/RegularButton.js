@@ -197,7 +197,7 @@ const sizeStyles = props => {
   const padding = calculatePadding(props)();
   return css({
     label: `button--${buttonSize}`,
-    padding
+    padding,
   });
 };
 

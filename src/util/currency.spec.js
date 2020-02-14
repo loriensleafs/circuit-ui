@@ -33,8 +33,8 @@ describe('currency', () => {
         const actual = currency.getCurrencyFormat(ccy, locale);
         expect(actual).toEqual(
           expect.objectContaining({
-            symbol: 'UYU'
-          })
+            symbol: 'UYU',
+          }),
         );
       });
 
@@ -48,8 +48,8 @@ describe('currency', () => {
             currencyPrecision: 2,
             decimalSep: '.',
             prepend: false,
-            thousandSep: ','
-          })
+            thousandSep: ',',
+          }),
         );
       });
     });
@@ -69,7 +69,7 @@ describe('currency', () => {
 
     const testCurrency = (amounts, ccy, locale, expected) => {
       const actual = amounts.map(amount =>
-        currency.formatCurrency(amount, ccy, locale)
+        currency.formatCurrency(amount, ccy, locale),
       );
       expect(actual).toEqual(expected);
     };
@@ -270,7 +270,7 @@ describe('currency', () => {
         const outputs = [
           `11,23\xA0${ccy}`,
           `1.000,00\xA0${ccy}`,
-          `0,98\xA0${ccy}`
+          `0,98\xA0${ccy}`,
         ];
         testCurrency(inputs, ccy, 'de-DE', outputs);
       });
@@ -312,7 +312,7 @@ describe('currency', () => {
 
         inputs.forEach((number, i) => {
           expect(currency.formatAmountForLocale(number, ccy, locale)).toBe(
-            expected[i]
+            expected[i],
           );
         });
       });

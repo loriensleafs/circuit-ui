@@ -45,7 +45,7 @@ ModalWrapper.propTypes = {
   /*
    * Modal content
    */
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 /**

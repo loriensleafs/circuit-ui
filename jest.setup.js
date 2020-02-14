@@ -23,7 +23,7 @@ import userEvent from '@testing-library/user-event';
 import { ThemeProvider } from 'emotion-theming';
 
 import ComponentsContext, {
-  defaultComponents
+  defaultComponents,
 } from './src/components/ComponentsContext';
 import { circuit } from './src/themes';
 
@@ -66,8 +66,8 @@ if (global.document) {
     setEnd: () => {},
     commonAncestorContainer: {
       nodeName: 'BODY',
-      ownerDocument: document
-    }
+      ownerDocument: document,
+    },
   });
 }
 
@@ -80,6 +80,6 @@ expect.addSnapshotSerializer(
   createSerializer({
     classNameReplacer(className, index) {
       return `circuit-${index}`;
-    }
-  })
+    },
+  }),
 );

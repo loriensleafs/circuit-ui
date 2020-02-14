@@ -38,7 +38,7 @@ describe('Tag', () => {
 
   describe('when is clickable', () => {
     const props = {
-      onClick: jest.fn()
+      onClick: jest.fn(),
     };
 
     it('should render with clickable styles', () => {
@@ -49,7 +49,7 @@ describe('Tag', () => {
 
   describe('when is selected', () => {
     const props = {
-      selected: true
+      selected: true,
     };
 
     it('should render with selected styles', () => {
@@ -59,7 +59,7 @@ describe('Tag', () => {
 
     it('should change the given icon color', () => {
       const component = create(
-        <Tag {...{ icon: <DummyIcon />, ...props }}>SomeTest</Tag>
+        <Tag {...{ icon: <DummyIcon />, ...props }}>SomeTest</Tag>,
       );
       expect(component).toMatchSnapshot();
     });
@@ -87,7 +87,7 @@ describe('Tag', () => {
    */
   describe('when is removable', () => {
     const props = {
-      onRemove: jest.fn()
+      onRemove: jest.fn(),
     };
 
     it('should render a close button', () => {
@@ -108,7 +108,7 @@ describe('Tag', () => {
 
   describe('when has icon', () => {
     const props = {
-      icon: <DummyIcon data-testid="tag-icon" />
+      icon: <DummyIcon data-testid="tag-icon" />,
     };
 
     it('should render with icon', () => {
@@ -120,7 +120,7 @@ describe('Tag', () => {
       const onRemove = jest.fn();
 
       const { queryByTestId } = render(
-        <Tag {...{ onRemove, props }}>SomeTest</Tag>
+        <Tag {...{ onRemove, props }}>SomeTest</Tag>,
       );
 
       expect(queryByTestId('tag-icon')).toBeNull();

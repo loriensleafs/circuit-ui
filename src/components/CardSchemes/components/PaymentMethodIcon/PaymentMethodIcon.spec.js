@@ -23,7 +23,7 @@ describe('PaymentMethodIcon', () => {
    */
   it('should render with default styles', () => {
     const actual = create(
-      <PaymentMethodIcon size={PaymentMethodIcon.KILO} iconId={iconId} />
+      <PaymentMethodIcon size={PaymentMethodIcon.KILO} iconId={iconId} />,
     );
     expect(actual).toMatchSnapshot();
   });
@@ -37,7 +37,7 @@ describe('PaymentMethodIcon', () => {
         size={PaymentMethodIcon.BYTE}
         iconId={iconId}
         data-testid="payment-method-icon"
-      />
+      />,
     );
 
     const iconEl = getByTestId('payment-method-icon');
@@ -50,7 +50,7 @@ describe('PaymentMethodIcon', () => {
    */
   it('should meet accessibility guidelines', async () => {
     const wrapper = renderToHtml(
-      <PaymentMethodIcon size={PaymentMethodIcon.GIGA} iconId={iconId} />
+      <PaymentMethodIcon size={PaymentMethodIcon.GIGA} iconId={iconId} />,
     );
     const actual = await axe(wrapper);
     expect(actual).toHaveNoViolations();

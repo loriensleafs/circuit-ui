@@ -30,7 +30,7 @@ class CardListStory extends Component {
     const padding = knobs.select(
       'padding',
       [CardList.Item.KILO, CardList.Item.MEGA, CardList.Item.GIGA],
-      CardList.Item.GIGA
+      CardList.Item.GIGA,
     );
 
     return (
@@ -55,8 +55,8 @@ export default {
   component: CardList,
   parameters: {
     docs: { page: docs },
-    jest: ['CardList']
-  }
+    jest: ['CardList'],
+  },
 };
 
 export const base = () => <CardListStory />;

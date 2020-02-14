@@ -60,7 +60,7 @@ const Progress = styled('div')(progressStyles);
 Progress.propTypes = {
   paused: PropTypes.bool,
   animationDuration: PropTypes.number,
-  slideDuration: PropTypes.number
+  slideDuration: PropTypes.number,
 };
 
 Progress.defaultProps = {
@@ -75,7 +75,7 @@ Progress.defaultProps = {
   /**
    * Indicatest duration of progress animation (in milliseconds).
    */
-  animationDuration: SLIDE_DURATION
+  animationDuration: SLIDE_DURATION,
 };
 
 export default Progress;

@@ -28,7 +28,7 @@ describe('Pagination', () => {
             perPage={50}
             translate={identity}
             onChange={identity}
-          />
+          />,
         );
 
         expect(component).toMatchSnapshot();
@@ -42,7 +42,7 @@ describe('Pagination', () => {
             perPage={50}
             translate={identity}
             onChange={identity}
-          />
+          />,
         );
 
         expect(getAllByTestId('pagination-button-page')).toHaveLength(3);
@@ -58,7 +58,7 @@ describe('Pagination', () => {
               total={500}
               translate={identity}
               onChange={identity}
-            />
+            />,
           );
           expect(component).toMatchSnapshot();
         });
@@ -69,7 +69,7 @@ describe('Pagination', () => {
               total={500}
               translate={identity}
               onChange={identity}
-            />
+            />,
           );
           expect(getAllByTestId('pagination-button-page')).toHaveLength(5);
           expect(getByTestId('pagination-button-next')).toBeVisible();
@@ -84,7 +84,7 @@ describe('Pagination', () => {
               total={500}
               translate={identity}
               onChange={identity}
-            />
+            />,
           );
           expect(component).toMatchSnapshot();
         });
@@ -95,7 +95,7 @@ describe('Pagination', () => {
               total={500}
               translate={identity}
               onChange={identity}
-            />
+            />,
           );
           expect(getAllByTestId('pagination-button-page')).toHaveLength(5);
           expect(getByTestId('pagination-button-next')).toBeVisible();
@@ -110,7 +110,7 @@ describe('Pagination', () => {
               total={500}
               translate={identity}
               onChange={identity}
-            />
+            />,
           );
           expect(component).toMatchSnapshot();
         });
@@ -122,7 +122,7 @@ describe('Pagination', () => {
               total={500}
               translate={identity}
               onChange={identity}
-            />
+            />,
           );
           expect(getAllByTestId('pagination-button-page')).toHaveLength(5);
           expect(getByTestId('pagination-button-next')).toBeVisible();
@@ -137,7 +137,7 @@ describe('Pagination', () => {
               total={500}
               translate={identity}
               onChange={identity}
-            />
+            />,
           );
           expect(component).toMatchSnapshot();
         });
@@ -148,7 +148,7 @@ describe('Pagination', () => {
               total={500}
               translate={identity}
               onChange={identity}
-            />
+            />,
           );
           expect(getAllByTestId('pagination-button-page')).toHaveLength(5);
           expect(getByTestId('pagination-button-next')).toBeVisible();
@@ -163,7 +163,7 @@ describe('Pagination', () => {
               total={500}
               translate={identity}
               onChange={identity}
-            />
+            />,
           );
           expect(component).toMatchSnapshot();
         });
@@ -175,7 +175,7 @@ describe('Pagination', () => {
               total={1000}
               translate={identity}
               onChange={identity}
-            />
+            />,
           );
           expect(getAllByTestId('pagination-button-page')).toHaveLength(5);
           expect(getByTestId('pagination-button-next')).toBeVisible();
@@ -192,7 +192,7 @@ describe('Pagination', () => {
           total={250}
           translate={identity}
           onChange={identity}
-        />
+        />,
       );
       const actual = await axe(wrapper);
       expect(actual).toHaveNoViolations();

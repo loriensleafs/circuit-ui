@@ -21,15 +21,15 @@ import TableHeader from '.';
 const options = {
   [TableHeader.LEFT]: TableHeader.LEFT,
   [TableHeader.RIGHT]: TableHeader.RIGHT,
-  [TableHeader.CENTER]: TableHeader.CENTER
+  [TableHeader.CENTER]: TableHeader.CENTER,
 };
 
 export default {
   title: 'Components/Table/TableHeader',
   component: TableHeader,
   parameters: {
-    jest: ['TableHeader']
-  }
+    jest: ['TableHeader'],
+  },
 };
 
 export const base = () => (

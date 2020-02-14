@@ -29,7 +29,7 @@ describe('TableHeader', () => {
 
     it('should render with row styles', () => {
       const actual = create(
-        <TableHeader scope={TableHeader.ROW}>{children}</TableHeader>
+        <TableHeader scope={TableHeader.ROW}>{children}</TableHeader>,
       );
       expect(actual).toMatchSnapshot();
     });
@@ -54,7 +54,7 @@ describe('TableHeader', () => {
         const actual = create(
           <TableHeader sortable isSorted sortDirection={ASCENDING}>
             {children}
-          </TableHeader>
+          </TableHeader>,
         );
         expect(actual).toMatchSnapshot();
       });
@@ -63,7 +63,7 @@ describe('TableHeader', () => {
         const actual = create(
           <TableHeader sortable isSorted sortDirection={DESCENDING}>
             {children}
-          </TableHeader>
+          </TableHeader>,
         );
         expect(actual).toMatchSnapshot();
       });
@@ -73,7 +73,7 @@ describe('TableHeader', () => {
   describe('Accessibility tests', () => {
     it('should meet accessibility guidelines', async () => {
       const wrapper = renderToHtml(
-        <TableHeader sortable>{children}</TableHeader>
+        <TableHeader sortable>{children}</TableHeader>,
       );
       const actual = await axe(wrapper);
       expect(actual).toHaveNoViolations();

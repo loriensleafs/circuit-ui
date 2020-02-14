@@ -33,7 +33,7 @@ describe('TextArea', () => {
     const actual = create(
       <TextArea
         prefix={({ className }) => <DummyElement {...{ className }} />}
-      />
+      />,
     );
     expect(actual).toMatchSnapshot();
   });
@@ -42,7 +42,7 @@ describe('TextArea', () => {
     const actual = create(
       <TextArea
         suffix={({ className }) => <DummyElement {...{ className }} />}
-      />
+      />,
     );
     expect(actual).toMatchSnapshot();
   });
@@ -110,7 +110,7 @@ describe('TextArea', () => {
       <Label htmlFor="textarea">
         <TextArea id="textarea" />
         Text area
-      </Label>
+      </Label>,
     );
     const actual = await axe(wrapper);
     expect(actual).toHaveNoViolations();

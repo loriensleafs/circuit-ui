@@ -55,7 +55,7 @@ describe('RegularButton', () => {
     const actual = create(
       <Button flat disabled>
         Flat button
-      </Button>
+      </Button>,
     );
     expect(actual).toMatchSnapshot();
   });
@@ -69,7 +69,7 @@ describe('RegularButton', () => {
     const actual = create(
       <Button secondary disabled>
         Secondary disabled button
-      </Button>
+      </Button>,
     );
     expect(actual).toMatchSnapshot();
   });
@@ -78,7 +78,7 @@ describe('RegularButton', () => {
     const actual = create(
       <Button secondary flat>
         Secondary flat button
-      </Button>
+      </Button>,
     );
     expect(actual).toMatchSnapshot();
   });
@@ -107,7 +107,7 @@ describe('RegularButton', () => {
           <Button href="#" data-testid="link-button">
             Link Button
           </Button>
-        </div>
+        </div>,
       );
       const buttonEl = getByTestId('link-button');
       expect(buttonEl.tagName).toBe('A');
@@ -120,7 +120,7 @@ describe('RegularButton', () => {
           <Button href="#" target="_blank" data-testid="link-button">
             Link Button
           </Button>
-        </div>
+        </div>,
       );
       const buttonEl = getByTestId('link-button');
       expect(buttonEl).toHaveAttribute('target', '_blank');

@@ -60,7 +60,7 @@ export const BUTTON_PROP_TYPES = {
   /**
    * Link target. Should only be passed, if href is passed, too.
    */
-  target: PropTypes.string
+  target: PropTypes.string,
 };
 
 export const BUTTON_DEFAULT_PROPS = {
@@ -72,7 +72,7 @@ export const BUTTON_DEFAULT_PROPS = {
   secondary: false,
   size: MEGA,
   stretch: false,
-  target: null
+  target: null,
 };
 
 export const REGULAR_BUTTON_ONLY_PROPS = [
@@ -80,5 +80,5 @@ export const REGULAR_BUTTON_ONLY_PROPS = [
   'as',
   'flat',
   'secondary',
-  'stretch'
+  'stretch',
 ];

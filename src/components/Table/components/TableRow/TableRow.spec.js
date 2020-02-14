@@ -28,7 +28,7 @@ describe('TableHeader', () => {
 
     it('should render with clickable styles', () => {
       const actual = create(
-        <TableRow onClick={jest.fn()}>{children}</TableRow>
+        <TableRow onClick={jest.fn()}>{children}</TableRow>,
       );
       expect(actual).toMatchSnapshot();
     });

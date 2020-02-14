@@ -87,12 +87,12 @@ CloseButton.propTypes = {
   /**
    * A function to handle the the click on the CloseButton
    */
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
 };
 
 CloseButton.defaultProps = {
   visible: false,
-  onClick: null
+  onClick: null,
 };
 
 export default CloseButton;

@@ -21,14 +21,14 @@ describe('PaginationButton', () => {
   describe('styles', () => {
     it('should render with default styles', () => {
       const actual = create(
-        <PaginationButton currentPage={1} onClick={jest.fn()} />
+        <PaginationButton currentPage={1} onClick={jest.fn()} />,
       );
       expect(actual).toMatchSnapshot();
     });
 
     it('should render with plain styles', () => {
       const actual = create(
-        <PaginationButton currentPage={1} onClick={jest.fn()} plain />
+        <PaginationButton currentPage={1} onClick={jest.fn()} plain />,
       );
       expect(actual).toMatchSnapshot();
     });
@@ -38,10 +38,10 @@ describe('PaginationButton', () => {
     it('should call method onClick with currentPage passed from props', () => {
       const props = {
         currentPage: 13,
-        onClick: jest.fn()
+        onClick: jest.fn(),
       };
       const { getByTestId } = render(
-        <PaginationButton {...props} data-testid="pagination-button" />
+        <PaginationButton {...props} data-testid="pagination-button" />,
       );
 
       act(() => {
@@ -56,7 +56,7 @@ describe('PaginationButton', () => {
   describe('accessibility', () => {
     it('should meet accessibility guidelines', async () => {
       const wrapper = renderToHtml(
-        <PaginationButton currentPage={1} onClick={jest.fn()} />
+        <PaginationButton currentPage={1} onClick={jest.fn()} />,
       );
       const actual = await axe(wrapper);
       expect(actual).toHaveNoViolations();

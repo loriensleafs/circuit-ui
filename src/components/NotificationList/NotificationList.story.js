@@ -22,8 +22,8 @@ export default {
   title: 'Components/Message/NotificationList',
   component: NotificationList,
   parameters: {
-    jest: ['NotificationList']
-  }
+    jest: ['NotificationList'],
+  },
 };
 
 export const base = () => (

@@ -23,8 +23,8 @@ export default {
   title: 'Components/Button/ButtonGroup',
   component: ButtonGroup,
   parameters: {
-    jest: ['ButtonGroup']
-  }
+    jest: ['ButtonGroup'],
+  },
 };
 
 export const base = () => (
@@ -32,7 +32,7 @@ export const base = () => (
     align={select(
       'Align',
       [ButtonGroup.LEFT, ButtonGroup.CENTER, ButtonGroup.RIGHT],
-      ButtonGroup.RIGHT
+      ButtonGroup.RIGHT,
     )}
     inlineMobile={boolean('Display inline on mobile', false)}
   >

@@ -26,8 +26,8 @@ export default {
   component: TextArea,
   parameters: {
     docs: { page: docs },
-    jest: ['TextArea']
-  }
+    jest: ['TextArea'],
+  },
 };
 
 // TextAreas always need labels for accessibility.

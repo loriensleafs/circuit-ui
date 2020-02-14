@@ -23,8 +23,8 @@ export default {
   title: 'Components/Carousel/Progress',
   component: Progress,
   parameters: {
-    jest: ['Carousel/Progress']
-  }
+    jest: ['Carousel/Progress'],
+  },
 };
 
 export const base = () => (

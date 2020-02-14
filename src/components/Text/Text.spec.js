@@ -25,7 +25,7 @@ describe('Text', () => {
   elements.forEach(as => {
     it(`should render as ${as} element, when passed "${as}" for the element prop`, () => {
       const heading = create(
-        <Text as={as}>{`${as.toUpperCase()} heading`}</Text>
+        <Text as={as}>{`${as.toUpperCase()} heading`}</Text>,
       );
       expect(heading).toMatchSnapshot();
     });

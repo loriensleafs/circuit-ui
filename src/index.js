@@ -21,12 +21,12 @@ export {
   id as uniqueId,
   numbers as numbersUtils,
   currency as currencyUtils,
-  sharedPropTypes
+  sharedPropTypes,
 } from './util';
 
 const currencyAmountUtils = {
   normalizeAmount,
-  isValidAmount
+  isValidAmount,
 };
 
 // Typography
@@ -42,7 +42,7 @@ export {
   RangePicker,
   RangePickerController,
   SingleDayPicker,
-  CalendarConstants
+  CalendarConstants,
 } from './components/Calendar';
 export { default as CalendarTag } from './components/CalendarTag';
 export { default as CalendarTagTwoStep } from './components/CalendarTagTwoStep';
@@ -56,7 +56,7 @@ export { default as Select } from './components/Select';
 export { default as TextArea } from './components/TextArea';
 export {
   default as CurrencyInput,
-  SimpleCurrencyInput
+  SimpleCurrencyInput,
 } from './components/CurrencyInput';
 export { currencyAmountUtils };
 
@@ -73,7 +73,7 @@ export { default as Selector } from './components/Selector';
 export {
   default as Message,
   MessageIcon,
-  MessageButton
+  MessageButton,
 } from './components/Message';
 export { default as NotificationBanner } from './components/NotificationBanner';
 export { default as NotificationList } from './components/NotificationList';
@@ -107,7 +107,7 @@ export {
   ModalProvider,
   ModalWrapper,
   ModalHeader,
-  ModalFooter
+  ModalFooter,
 } from './components/Modal';
 export { default as AutoCompleteInput } from './components/AutoCompleteInput';
 export { default as AutoCompleteTags } from './components/AutoCompleteTags';
@@ -121,7 +121,7 @@ export { default as PaymentMethodIcon } from './components/CardSchemes/component
 export { default as Sidebar } from './components/Sidebar';
 export {
   SidebarContextProvider,
-  SidebarContextConsumer
+  SidebarContextConsumer,
 } from './components/Sidebar';
 export { default as Header } from './components/Header';
 export { default as Step, useStep } from './components/Step';
@@ -134,14 +134,14 @@ export { default as InlineElements } from './components/InlineElements';
 export {
   default as ComponentsContext,
   withComponents,
-  useComponents
+  useComponents,
 } from './components/ComponentsContext';
 
 // Theme
 const standard = { ...circuit }; // otherwise this get exported as a `Module`
 const theme = {
   standard,
-  circuit: standard
+  circuit: standard,
 };
 
 export { theme };

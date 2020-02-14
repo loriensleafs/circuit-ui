@@ -54,12 +54,12 @@ Spacing.propTypes = {
   /**
    * Adds top margin to component
    */
-  top: PropTypes.bool
+  top: PropTypes.bool,
 };
 
 Spacing.defaultProps = {
   bottom: false,
-  top: false
+  top: false,
 };
 
 /**

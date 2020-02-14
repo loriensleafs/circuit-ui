@@ -31,11 +31,11 @@ const PaginationButton = ({ currentPage, onClick, active, ...props }) => (
 PaginationButton.propTypes = {
   currentPage: PropTypes.number.isRequired,
   onClick: PropTypes.func.isRequired,
-  active: PropTypes.bool
+  active: PropTypes.bool,
 };
 
 PaginationButton.defaultProps = {
-  active: false
+  active: false,
 };
 
 export default PaginationButton;

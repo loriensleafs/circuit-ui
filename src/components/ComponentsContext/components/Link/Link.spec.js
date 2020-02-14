@@ -23,7 +23,7 @@ describe('Link', () => {
     'href': 'https://sumup.com',
     'target': '_blank',
     'rel': 'noreferrer',
-    'data-testid': 'link'
+    'data-testid': 'link',
   };
 
   describe('styles', () => {

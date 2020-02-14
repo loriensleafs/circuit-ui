@@ -39,7 +39,7 @@ const Col = styled('div')(baseStyles);
 const sizingProp = PropTypes.oneOfType([
   PropTypes.object,
   PropTypes.number,
-  PropTypes.string
+  PropTypes.string,
 ]);
 
 Col.propTypes = {
@@ -58,12 +58,12 @@ Col.propTypes = {
    * { untilKilo: 6 } will create a style for the untilKilo media query with a
    * span of 6 columns.
    */
-  span: sizingProp
+  span: sizingProp,
 };
 
 Col.defaultProps = {
   skip: '0',
-  span: '0'
+  span: '0',
 };
 
 /**

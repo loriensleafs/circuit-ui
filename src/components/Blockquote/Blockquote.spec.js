@@ -34,14 +34,14 @@ describe('Blockquote', () => {
 
   it('should render with mega styles', () => {
     const actual = create(
-      <Blockquote size={Blockquote.MEGA}>{quote}</Blockquote>
+      <Blockquote size={Blockquote.MEGA}>{quote}</Blockquote>,
     );
     expect(actual).toMatchSnapshot();
   });
 
   it('should render with giga styles', () => {
     const actual = create(
-      <Blockquote size={Blockquote.GIGA}>{quote}</Blockquote>
+      <Blockquote size={Blockquote.GIGA}>{quote}</Blockquote>,
     );
     expect(actual).toMatchSnapshot();
   });

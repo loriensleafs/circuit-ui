@@ -104,13 +104,13 @@ const SimpleCurrencyInput = ({
       inputPrependStyles({
         theme,
         symbol,
-        prependSymbol
+        prependSymbol,
       }),
       inputAppendStyles({
         theme,
         symbol,
-        prependSymbol
-      })
+        prependSymbol,
+      }),
     ])}
     renderPrefix={({ className }) =>
       prependSymbol && (
@@ -174,14 +174,14 @@ SimpleCurrencyInput.propTypes = {
    * Should the symbol be put on the left side
    * of the input?
    */
-  prependSymbol: PropTypes.bool
+  prependSymbol: PropTypes.bool,
 };
 
 SimpleCurrencyInput.defaultProps = {
   prependSymbol: false,
   disabled: false,
   invalid: false,
-  hasWarning: false
+  hasWarning: false,
 };
 
 /**

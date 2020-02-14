@@ -26,8 +26,8 @@ export default {
   component: List,
   parameters: {
     docs: { page: docs },
-    jest: ['List']
-  }
+    jest: ['List'],
+  },
 };
 
 const ListItems = () => (

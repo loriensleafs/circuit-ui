@@ -36,13 +36,13 @@ const createLeftBorderStyles = colorName => ({ theme, size, type }) => {
   const colors = {
     [DANGER]: theme.colors.danger,
     [SUCCESS]: theme.colors.success,
-    [WARNING]: theme.colors.warning
+    [WARNING]: theme.colors.warning,
   };
 
   const textColors = {
     [DANGER]: theme.colors.danger,
     [SUCCESS]: theme.colors.black,
-    [WARNING]: theme.colors.black
+    [WARNING]: theme.colors.black,
   };
 
   return (
@@ -81,7 +81,7 @@ const InlineNotification = styled('p')(
   dangerStyles,
   successStyles,
   warningStyles,
-  marginStyles
+  marginStyles,
 );
 
 InlineNotification.DANGER = DANGER;
@@ -98,7 +98,7 @@ InlineNotification.propTypes = {
   type: PropTypes.oneOf([
     InlineNotification.DANGER,
     InlineNotification.SUCCESS,
-    InlineNotification.WARNING
+    InlineNotification.WARNING,
   ]),
   /**
    * Should correspond to the size provided to the surrounding Card component.
@@ -107,12 +107,12 @@ InlineNotification.propTypes = {
   /**
    * Removes the default bottom margin from the text.
    */
-  noMargin: PropTypes.bool
+  noMargin: PropTypes.bool,
 };
 
 InlineNotification.defaultProps = {
   size: InlineNotification.GIGA,
-  noMargin: false
+  noMargin: false,
 };
 
 /**

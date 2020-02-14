@@ -30,7 +30,7 @@ describe('PlainButton', () => {
     const actual = create(
       <Button plain href="example">
         Button
-      </Button>
+      </Button>,
     );
     expect(actual).toMatchSnapshot();
   });
@@ -39,7 +39,7 @@ describe('PlainButton', () => {
     const actual = create(
       <Button plain primary>
         Button
-      </Button>
+      </Button>,
     );
     expect(actual).toMatchSnapshot();
   });
@@ -48,7 +48,7 @@ describe('PlainButton', () => {
     const actual = create(
       <Button plain size={Button.KILO}>
         Button
-      </Button>
+      </Button>,
     );
     expect(actual).toMatchSnapshot();
   });
@@ -57,7 +57,7 @@ describe('PlainButton', () => {
     const actual = create(
       <Button plain size={Button.MEGA}>
         Button
-      </Button>
+      </Button>,
     );
     expect(actual).toMatchSnapshot();
   });
@@ -66,7 +66,7 @@ describe('PlainButton', () => {
     const actual = create(
       <Button plain size={Button.GIGA}>
         Button
-      </Button>
+      </Button>,
     );
     expect(actual).toMatchSnapshot();
   });
@@ -78,7 +78,7 @@ describe('PlainButton', () => {
     const wrapper = renderToHtml(
       <Button plain href="http://accessibility.com">
         Link
-      </Button>
+      </Button>,
     );
     const actual = await axe(wrapper);
     expect(actual).toHaveNoViolations();
@@ -88,7 +88,7 @@ describe('PlainButton', () => {
     const wrapper = renderToHtml(
       <Button plain onClick={() => {}}>
         Link
-      </Button>
+      </Button>,
     );
     const actual = await axe(wrapper);
     expect(actual).toHaveNoViolations();

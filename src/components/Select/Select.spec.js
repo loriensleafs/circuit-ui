@@ -22,7 +22,7 @@ describe('Select', () => {
   const options = [
     { value: '1', label: 'Option 1' },
     { value: '2', label: 'Option 2' },
-    { value: '3', label: 'Option 3' }
+    { value: '3', label: 'Option 3' },
   ];
 
   beforeEach(() => {
@@ -64,7 +64,7 @@ describe('Select', () => {
 
   it('should render with a tooltip when passed a validation hint', () => {
     const actual = create(
-      <Select {...{ options }} validationHint="This field is required." />
+      <Select {...{ options }} validationHint="This field is required." />,
     );
     expect(actual).toMatchSnapshot();
   });
@@ -77,7 +77,7 @@ describe('Select', () => {
       <Select
         {...{ options }}
         renderPrefix={({ className }) => <DummyElement className={className} />}
-      />
+      />,
     );
     expect(actual).toMatchSnapshot();
   });
@@ -89,7 +89,7 @@ describe('Select', () => {
     const wrapper = renderToHtml(
       <Label htmlFor="select">
         <Select {...{ options }} id="select" />
-      </Label>
+      </Label>,
     );
     const actual = await axe(wrapper);
     expect(actual).toHaveNoViolations();
@@ -111,7 +111,7 @@ describe('Select', () => {
 
   it('should be disabled when passed the disabled prop', () => {
     const { getByTestId } = render(
-      <Select options={options} data-testid="select-element" disabled />
+      <Select options={options} data-testid="select-element" disabled />,
     );
     const selectEl = getByTestId('select-element');
     expect(selectEl).toBeDisabled();
@@ -124,7 +124,7 @@ describe('Select', () => {
         options={options}
         placeholder={placeholder}
         data-testid="select-element"
-      />
+      />,
     );
     const selectEl = getByTestId('select-element');
     expect(selectEl.firstChild).toHaveTextContent(placeholder);
@@ -139,7 +139,7 @@ describe('Select', () => {
         placeholder={placeholder}
         value={value}
         data-testid="select-element"
-      />
+      />,
     );
     const selectEl = getByTestId('select-element');
     expect(selectEl.firstChild).not.toHaveTextContent(placeholder);

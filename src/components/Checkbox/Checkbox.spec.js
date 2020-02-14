@@ -49,7 +49,7 @@ describe('Checkbox', () => {
       <Checkbox
         validationHint="This field is required."
         {...{ name, onChange }}
-      />
+      />,
     );
     expect(actual).toMatchSnapshot();
   });
@@ -59,20 +59,20 @@ describe('Checkbox', () => {
    */
   it('should be unchecked by default', () => {
     const { getByLabelText } = render(
-      <Checkbox {...{ name, onChange }}>Label</Checkbox>
+      <Checkbox {...{ name, onChange }}>Label</Checkbox>,
     );
     const inputEl = getByLabelText('Label', {
-      exact: false
+      exact: false,
     });
     expect(inputEl).not.toHaveAttribute('checked');
   });
 
   it('should call the change handler when clicked', () => {
     const { getByLabelText } = render(
-      <Checkbox {...{ name, onChange }}>Label</Checkbox>
+      <Checkbox {...{ name, onChange }}>Label</Checkbox>,
     );
     const inputEl = getByLabelText('Label', {
-      exact: false
+      exact: false,
     });
 
     act(() => {
@@ -89,7 +89,7 @@ describe('Checkbox', () => {
     const wrapper = renderToHtml(
       <div>
         <Checkbox {...{ name, onChange }}>Label</Checkbox>
-      </div>
+      </div>,
     );
     const actual = await axe(wrapper);
     expect(actual).toHaveNoViolations();

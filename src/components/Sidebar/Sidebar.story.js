@@ -37,8 +37,8 @@ export default {
   component: Sidebar,
   parameters: {
     docs: { page: docs },
-    jest: ['Sidebar']
-  }
+    jest: ['Sidebar'],
+  },
 };
 
 const SidebarWithState = () => {

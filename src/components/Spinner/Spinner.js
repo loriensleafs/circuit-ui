@@ -82,7 +82,7 @@ const activeContainerStyles = ({ active }) =>
 
 const SpinnerContainer = styled('div')(
   baseContainerStyles,
-  activeContainerStyles
+  activeContainerStyles,
 );
 
 /**
@@ -99,7 +99,7 @@ Spinner.propTypes = {
    * Renders a dark variant of the Spinner.
    */
   dark: PropTypes.bool,
-  active: PropTypes.bool
+  active: PropTypes.bool,
 };
 
 Spinner.defaultProps = {
@@ -120,7 +120,7 @@ Spinner.defaultProps = {
   /**
    * Indicates that updates to the region have the highest priority.
    */
-  'aria-live': 'assertive'
+  'aria-live': 'assertive',
 };
 
 /**

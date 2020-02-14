@@ -28,15 +28,15 @@ const Container = styled('div')(
     height: 50px;
     justify-content: center;
     width: 50px;
-  `
+  `,
 );
 
 export default {
   title: 'Components/Spinner',
   component: Spinner,
   parameters: {
-    jest: ['Spinner']
-  }
+    jest: ['Spinner'],
+  },
 };
 
 export const base = () => (
@@ -48,9 +48,9 @@ export const base = () => (
         {
           [Spinner.MEGA]: 'Mega',
           [Spinner.KILO]: 'Kilo',
-          [Spinner.GIGA]: 'Giga'
+          [Spinner.GIGA]: 'Giga',
         },
-        Spinner.GIGA
+        Spinner.GIGA,
       )}
     />
   </Container>

@@ -72,12 +72,12 @@ CardHeader.propTypes = {
    * Text label for the close button for screen readers.
    * Important for accessibility.
    */
-  labelCloseButton: PropTypes.string
+  labelCloseButton: PropTypes.string,
 };
 
 CardHeader.defaultProps = {
   onClose: null,
-  children: null
+  children: null,
 };
 
 /**

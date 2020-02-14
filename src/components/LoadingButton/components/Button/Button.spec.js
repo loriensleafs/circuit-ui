@@ -40,7 +40,7 @@ describe('Button', () => {
     it('should not bind the click handler to the button while loading', () => {
       const onClick = jest.fn();
       const { getByTestId } = render(
-        <Button isLoading onClick={onClick} data-testid="loading-button" />
+        <Button isLoading onClick={onClick} data-testid="loading-button" />,
       );
 
       act(() => {

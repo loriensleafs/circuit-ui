@@ -68,11 +68,11 @@ NotificationList.propTypes = {
   /**
    * One or more Messages.
    */
-  children: childrenPropType
+  children: childrenPropType,
 };
 
 NotificationList.defaultProps = {
-  children: null
+  children: null,
 };
 
 /**

@@ -182,7 +182,7 @@ RadioButton.propTypes = {
    * Triggers disabled styles on the component. This is also forwarded as
    * attribute to the <input> element.
    */
-  disabled: PropTypes.bool
+  disabled: PropTypes.bool,
 };
 
 RadioButton.defaultProps = {
@@ -190,7 +190,7 @@ RadioButton.defaultProps = {
   checked: false,
   invalid: false,
   disabled: false,
-  children: null
+  children: null,
 };
 
 /**

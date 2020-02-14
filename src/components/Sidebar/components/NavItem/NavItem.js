@@ -87,7 +87,7 @@ const StyledLink = styled.a(
   hoverStyles,
   selectedStyles,
   secondaryStyles,
-  disabledStyles
+  disabledStyles,
 );
 
 const NavItem = ({
@@ -162,7 +162,7 @@ NavItem.propTypes = {
    * The onClick method to handle the click event on NavItems
    */
   onClick: PropTypes.func,
-  components: componentsPropType
+  components: componentsPropType,
 };
 
 NavItem.defaultProps = {
@@ -173,7 +173,7 @@ NavItem.defaultProps = {
   selectedIcon: '',
   selected: false,
   disabled: false,
-  onClick: null
+  onClick: null,
 };
 
 export default NavItem;

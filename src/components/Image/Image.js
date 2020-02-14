@@ -43,7 +43,7 @@ Image.propTypes = {
    * e.g. because of slow connection, an error in the src attribute, or if the
    * user uses a screen reader.
    */
-  alt: PropTypes.string.isRequired
+  alt: PropTypes.string.isRequired,
 };
 
 /**

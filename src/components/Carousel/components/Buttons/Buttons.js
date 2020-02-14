@@ -93,5 +93,5 @@ export const PlayButton = ({ paused, ...props }) => (
 );
 
 PlayButton.propTypes = {
-  paused: PropTypes.bool
+  paused: PropTypes.bool,
 };

@@ -21,16 +21,16 @@ describe('RadioButtonGroup', () => {
   const options = [
     {
       label: 'Option 1',
-      value: 'first'
+      value: 'first',
     },
     {
       label: 'Option 2',
-      value: 'second'
+      value: 'second',
     },
     {
       label: 'Option 3',
-      value: 'third'
-    }
+      value: 'third',
+    },
   ];
 
   /**
@@ -49,7 +49,7 @@ describe('RadioButtonGroup', () => {
     const wrapper = renderToHtml(
       <div role="group" aria-label="Choose your favourite option">
         <RadioButtonGroup options={options} value={value} />
-      </div>
+      </div>,
     );
     const actual = await axe(wrapper);
     expect(actual).toHaveNoViolations();
@@ -61,7 +61,7 @@ describe('RadioButtonGroup', () => {
   it('should check the currently active RadioButton', () => {
     const value = 'second';
     const { getByLabelText } = render(
-      <RadioButtonGroup options={options} value={value} />
+      <RadioButtonGroup options={options} value={value} />,
     );
     expect(getByLabelText('Option 1')).not.toHaveAttribute('checked');
     expect(getByLabelText('Option 2')).toHaveAttribute('checked');

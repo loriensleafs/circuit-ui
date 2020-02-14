@@ -23,8 +23,8 @@ export default {
   component: Hr,
   parameters: {
     docs: { page: docs },
-    jest: ['Hr']
-  }
+    jest: ['Hr'],
+  },
 };
 
 export const base = () => <Hr />;

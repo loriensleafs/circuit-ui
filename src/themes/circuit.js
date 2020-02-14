@@ -25,7 +25,7 @@ const neutrals = {
   n500: '#9DA7B1',
   n700: '#5C656F',
   n800: '#323E49',
-  n900: '#212933'
+  n900: '#212933',
 };
 
 const blues = {
@@ -35,7 +35,7 @@ const blues = {
   b400: '#7FB5FF',
   b500: '#3388FF',
   b700: '#1760CE',
-  b900: '#003C8B'
+  b900: '#003C8B',
 };
 
 const greens = {
@@ -44,7 +44,7 @@ const greens = {
   g300: '#BED630',
   g500: '#8CC13F',
   g700: '#47995A',
-  g900: '#356560'
+  g900: '#356560',
 };
 
 const violets = {
@@ -53,7 +53,7 @@ const violets = {
   v300: '#C781C9',
   v500: '#B54DB3',
   v700: '#8928A2',
-  v900: '#5F1D6B'
+  v900: '#5F1D6B',
 };
 
 const oranges = {
@@ -62,7 +62,7 @@ const oranges = {
   o300: '#F7941D',
   o500: '#CE6C0B',
   o700: '#8E4503',
-  o900: '#66391B'
+  o900: '#66391B',
 };
 
 const yellows = {
@@ -71,7 +71,7 @@ const yellows = {
   y300: '#F6CC1B',
   y500: '#D8A413',
   y700: '#AD7A14',
-  y900: '#725514'
+  y900: '#725514',
 };
 
 const reds = {
@@ -80,7 +80,7 @@ const reds = {
   r300: '#EA7A7A',
   r500: '#DB4D4D',
   r700: '#B22828',
-  r900: '#7F1818'
+  r900: '#7F1818',
 };
 
 const primary = {
@@ -90,7 +90,7 @@ const primary = {
   p400: blues.b400,
   p500: blues.b500,
   p700: blues.b700,
-  p900: blues.b900
+  p900: blues.b900,
 };
 
 const misc = {
@@ -99,7 +99,7 @@ const misc = {
   bodyColor: black,
   danger: reds.r500,
   success: greens.g700,
-  warning: yellows.y500
+  warning: yellows.y500,
 };
 
 export const colors = {
@@ -113,7 +113,7 @@ export const colors = {
   ...oranges,
   ...violets,
   ...primary,
-  ...misc
+  ...misc,
 };
 
 export const spacings = {
@@ -125,94 +125,94 @@ export const spacings = {
   tera: '32px',
   peta: '40px',
   exa: '48px',
-  zetta: '56px'
+  zetta: '56px',
 };
 
 export const iconSizes = {
   byte: '14px',
   kilo: '16px',
   mega: '24px',
-  giga: '32px'
+  giga: '32px',
 };
 
 export const borderRadius = {
   kilo: '1px',
   mega: '4px',
-  giga: '5px'
+  giga: '5px',
 };
 
 export const borderWidth = {
   kilo: '1px',
-  mega: '2px'
+  mega: '2px',
 };
 
 export const typography = {
   headings: {
     kilo: {
       fontSize: '17px',
-      lineHeight: '24px'
+      lineHeight: '24px',
     },
     mega: {
       fontSize: '19px',
-      lineHeight: '24px'
+      lineHeight: '24px',
     },
     giga: {
       fontSize: '22px',
-      lineHeight: '24px'
+      lineHeight: '24px',
     },
     tera: {
       fontSize: '24px',
-      lineHeight: '32px'
+      lineHeight: '32px',
     },
     peta: {
       fontSize: '28px',
-      lineHeight: '32px'
+      lineHeight: '32px',
     },
     exa: {
       fontSize: '36px',
-      lineHeight: '44px'
+      lineHeight: '44px',
     },
     zetta: {
       fontSize: '42px',
-      lineHeight: '48px'
-    }
+      lineHeight: '48px',
+    },
   },
   subHeadings: {
     kilo: {
       fontSize: '12px',
-      lineHeight: '20px'
+      lineHeight: '20px',
     },
     mega: {
       fontSize: '14px',
-      lineHeight: '18px'
-    }
+      lineHeight: '18px',
+    },
   },
   text: {
     kilo: {
       fontSize: '13px',
-      lineHeight: '20px'
+      lineHeight: '20px',
     },
     mega: {
       fontSize: '16px',
-      lineHeight: '24px'
+      lineHeight: '24px',
     },
     giga: {
       fontSize: '18px',
-      lineHeight: '28px'
-    }
-  }
+      lineHeight: '28px',
+    },
+  },
 };
 
 export const fontStack = {
   default:
     // eslint-disable-next-line
     'aktiv-grotesk, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
-  mono: 'Consolas, monaco, monospace'
+  mono: 'Consolas, monaco, monospace',
 };
 
 export const fontWeight = {
   regular: '400',
-  bold: '700'
+  bold: '700',
 };
 
 export const grid = {
@@ -221,43 +221,43 @@ export const grid = {
     breakpoint: 'default',
     cols: 12,
     maxWidth: '880px',
-    gutter: spacings.mega
+    gutter: spacings.mega,
   },
   untilKilo: {
     priority: 1,
     breakpoint: 'untilKilo',
     cols: 12,
     maxWidth: '400px',
-    gutter: spacings.byte
+    gutter: spacings.byte,
   },
   kilo: {
     priority: 2,
     breakpoint: 'kilo',
     cols: 12,
     maxWidth: '600px',
-    gutter: spacings.mega
+    gutter: spacings.mega,
   },
   mega: {
     priority: 3,
     breakpoint: 'mega',
     cols: 12,
     maxWidth: '760px',
-    gutter: spacings.giga
+    gutter: spacings.giga,
   },
   giga: {
     priority: 4,
     breakpoint: 'giga',
     cols: 12,
     maxWidth: '880px',
-    gutter: spacings.giga
+    gutter: spacings.giga,
   },
   afterTera: {
     priority: 5,
     breakpoint: 'tera',
     cols: 12,
     maxWidth: '1200px',
-    gutter: spacings.giga
-  }
+    gutter: spacings.giga,
+  },
 };
 
 export const breakpoints = {
@@ -270,14 +270,14 @@ export const breakpoints = {
   giga: 960,
   gigaToTera: '(min-width: 960px) and (max-width: 1279px)',
   tera: 1280,
-  afterTera: '(min-width: 1280px)'
+  afterTera: '(min-width: 1280px)',
 };
 
 export const mq = createMediaQueries(breakpoints);
 
 export const transitions = {
   default: '200ms ease-in-out',
-  slow: '300ms ease-in-out'
+  slow: '300ms ease-in-out',
 };
 
 // these values need to be properly trimmed/renamed as we go.
@@ -291,9 +291,9 @@ export const zIndex = {
   header: 600,
   backdrop: 700,
   sidebar: 800,
-  modal: 1000
+  modal: 1000,
 };
 
 export const palette = {
-  divider: 'rgba(0, 0, 0, 0.12)'
+  divider: 'rgba(0, 0, 0, 0.12)',
 };

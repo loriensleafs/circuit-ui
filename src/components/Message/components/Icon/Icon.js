@@ -25,13 +25,13 @@ import MessageWarning from '../MessageWarning';
 const ICON_TYPES = {
   SUCCESS: 'success',
   ERROR: 'error',
-  WARNING: 'warning'
+  WARNING: 'warning',
 };
 
 const ICON_MAP = {
   [ICON_TYPES.SUCCESS]: MessageSuccess,
   [ICON_TYPES.ERROR]: MessageError,
-  [ICON_TYPES.WARNING]: MessageWarning
+  [ICON_TYPES.WARNING]: MessageWarning,
 };
 
 const baseStyles = ({ theme }) => css`
@@ -76,8 +76,8 @@ MessageIcon.propTypes = {
   type: PropTypes.oneOf([
     MessageIcon.SUCCESS,
     MessageIcon.ERROR,
-    MessageIcon.WARNING
-  ])
+    MessageIcon.WARNING,
+  ]),
 };
 
 /**

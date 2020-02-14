@@ -23,6 +23,6 @@ export {
   ModalProvider,
   ModalWrapper,
   ModalHeader,
-  ModalFooter
+  ModalFooter,
 };
 export default Modal;

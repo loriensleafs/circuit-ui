@@ -89,13 +89,13 @@ Sidebar.propTypes = {
   /**
    * A function to handle the sidebar close
    */
-  onClose: PropTypes.func
+  onClose: PropTypes.func,
 };
 
 Sidebar.defaultProps = {
   children: '',
   open: false,
-  onClose: null
+  onClose: null,
 };
 
 Sidebar.Header = Header;

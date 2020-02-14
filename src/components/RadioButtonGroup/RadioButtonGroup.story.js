@@ -21,23 +21,23 @@ export default {
   title: 'Forms/RadioButton/RadioButtonGroup',
   component: RadioButtonGroup,
   parameters: {
-    jest: ['RadioButtonGroup']
-  }
+    jest: ['RadioButtonGroup'],
+  },
 };
 
 const options = [
   {
     label: 'Option 1',
-    value: 'First'
+    value: 'First',
   },
   {
     label: 'Option 2',
-    value: 'Second'
+    value: 'Second',
   },
   {
     label: 'Option 3',
-    value: 'Third'
-  }
+    value: 'Third',
+  },
 ];
 
 // eslint-disable-next-line react/prop-types

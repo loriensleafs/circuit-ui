@@ -28,8 +28,8 @@ export default {
   title: 'Components/Popover',
   component: Popover,
   parameters: {
-    jest: ['Popover']
-  }
+    jest: ['Popover'],
+  },
 };
 
 const PopoverWithState = props => {

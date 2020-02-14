@@ -23,8 +23,8 @@ export default {
   component: Image,
   parameters: {
     docs: { page: docs },
-    jest: ['Image']
-  }
+    jest: ['Image'],
+  },
 };
 
 export const base = () => (

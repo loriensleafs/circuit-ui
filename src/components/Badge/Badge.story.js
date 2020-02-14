@@ -27,8 +27,8 @@ export default {
   component: Badge,
   parameters: {
     docs: { page: docs },
-    jest: ['Badge']
-  }
+    jest: ['Badge'],
+  },
 };
 
 export const base = () => (

@@ -24,8 +24,8 @@ export default {
   component: Pagination,
   parameters: {
     docs: { page: docs },
-    jest: ['Pagination']
-  }
+    jest: ['Pagination'],
+  },
 };
 
 export const base = () => (

@@ -22,8 +22,8 @@ export default {
   title: 'Components/Hamburger',
   component: Hamburger,
   parameters: {
-    jest: ['Hamburger']
-  }
+    jest: ['Hamburger'],
+  },
 };
 
 const HamburderWithState = () => {

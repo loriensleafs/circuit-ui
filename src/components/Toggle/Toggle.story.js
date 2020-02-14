@@ -23,8 +23,8 @@ export default {
   component: Toggle,
   parameters: {
     docs: { page: docs },
-    jest: ['Toggle']
-  }
+    jest: ['Toggle'],
+  },
 };
 
 /* eslint-disable react/prop-types */

@@ -83,7 +83,7 @@ const SubNavigationContainer = styled.ul(
   baseStyles,
   selectedItemStyles,
   listStyles,
-  visibleStyles
+  visibleStyles,
 );
 
 const SubNavList = ({ children, visible, ...props }) => (
@@ -104,12 +104,12 @@ SubNavList.propTypes = {
   /**
    * If the SubNavList is currently visible
    */
-  visible: PropTypes.bool
+  visible: PropTypes.bool,
 };
 
 SubNavList.defaultProps = {
   children: null,
-  visible: false
+  visible: false,
 };
 
 /**

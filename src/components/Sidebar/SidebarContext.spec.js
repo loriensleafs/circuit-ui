@@ -17,7 +17,7 @@ import React, { useContext } from 'react';
 import {
   SidebarContext,
   SidebarContextProvider,
-  SidebarContextConsumer
+  SidebarContextConsumer,
 } from './SidebarContext';
 
 const ToggleSidebarButton = () => {
@@ -46,7 +46,7 @@ describe('SidebarContext', () => {
             />
           )}
         </SidebarContextConsumer>
-      </SidebarContextProvider>
+      </SidebarContextProvider>,
     );
     const buttonEl = getByTestId('button');
 
@@ -63,7 +63,7 @@ describe('SidebarContext', () => {
     const { getByTestId } = render(
       <SidebarContextProvider>
         <ToggleSidebarButton />
-      </SidebarContextProvider>
+      </SidebarContextProvider>,
     );
 
     const buttonElement = getByTestId('button');

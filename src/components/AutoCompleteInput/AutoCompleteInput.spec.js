@@ -20,7 +20,7 @@ import AutoCompleteInput from './AutoCompleteInput';
 const items = [
   { 'value': '1111111111111', 'data-testid': 'autocomplete-input-item' },
   { 'value': '2222222222222', 'data-testid': 'autocomplete-input-item' },
-  { 'value': '3333333333333', 'data-testid': 'autocomplete-input-item' }
+  { 'value': '3333333333333', 'data-testid': 'autocomplete-input-item' },
 ];
 
 describe('AutoCompleteInput', () => {
@@ -29,7 +29,7 @@ describe('AutoCompleteInput', () => {
    */
   it('should render with default styles', () => {
     const actual = create(
-      <AutoCompleteInput onChange={() => {}} items={items} />
+      <AutoCompleteInput onChange={() => {}} items={items} />,
     );
     expect(actual).toMatchSnapshot();
   });
@@ -44,7 +44,7 @@ describe('AutoCompleteInput', () => {
         onChange={onChange}
         items={items}
         data-testid="autocomplete-input"
-      />
+      />,
     );
 
     const inputEl = getByTestId('autocomplete-input');

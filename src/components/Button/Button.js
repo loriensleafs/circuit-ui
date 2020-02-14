@@ -32,7 +32,7 @@ const SHARED_PROPS = [
   'onClick',
   'primary',
   'size',
-  'type'
+  'type',
 ];
 
 export const BUTTON_PROPS = [
@@ -43,7 +43,7 @@ export const BUTTON_PROPS = [
   'secondary',
   'size',
   'stretch',
-  'target'
+  'target',
 ];
 
 export const PLAIN_BUTTON_PROPS = [...SHARED_PROPS, 'size', 'target'];
@@ -53,7 +53,7 @@ const REGULAR_BUTTON_ONLY_PROPS = [
   'as',
   'flat',
   'secondary',
-  'stretch'
+  'stretch',
 ];
 
 /**
@@ -108,7 +108,7 @@ Button.propTypes = {
   /**
    * Link target. Should only be passed, if href is passed, too.
    */
-  target: PropTypes.string
+  target: PropTypes.string,
 };
 
 Button.defaultProps = {
@@ -120,7 +120,7 @@ Button.defaultProps = {
   secondary: false,
   size: Button.MEGA,
   stretch: false,
-  target: null
+  target: null,
 };
 
 /**

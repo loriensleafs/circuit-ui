@@ -26,8 +26,8 @@ export default {
   component: Input,
   parameters: {
     docs: { page: docs },
-    jest: ['Input']
-  }
+    jest: ['Input'],
+  },
 };
 
 // Inputs always need labels for accessibility.

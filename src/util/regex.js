@@ -37,13 +37,13 @@ export function currencyToRegex(
   thousandSeparators = [' ', '.', ',', "'", '`'],
   decimalNumbers = 2,
   decimalSeparators = ['.', ','],
-  thousandGroupNumbers = 3
+  thousandGroupNumbers = 3,
 ) {
   const thousandSeparatorsRegex = arrayOfStringsToRegex(
-    thousandSeparators
+    thousandSeparators,
   ).join('|');
   const decimalSeparatorsRegex = arrayOfStringsToRegex(decimalSeparators).join(
-    '|'
+    '|',
   );
 
   const integerRegex = `(\\d{0,${thousandGroupNumbers -

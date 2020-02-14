@@ -58,11 +58,11 @@ ModalFooter.propTypes = {
   /**
    * Direction to align the content. Either left/right
    */
-  align: PropTypes.oneOf([ModalFooter.LEFT, ModalFooter.RIGHT])
+  align: PropTypes.oneOf([ModalFooter.LEFT, ModalFooter.RIGHT]),
 };
 
 ModalFooter.defaultProps = {
-  align: ModalFooter.RIGHT
+  align: ModalFooter.RIGHT,
 };
 
 /**

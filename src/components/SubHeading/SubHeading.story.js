@@ -27,8 +27,8 @@ export default {
   component: SubHeading,
   parameters: {
     docs: { page: docs },
-    jest: ['SubHeading']
-  }
+    jest: ['SubHeading'],
+  },
 };
 
 export const base = () => (

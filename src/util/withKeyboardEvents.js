@@ -34,5 +34,5 @@ export const createOnKeyDown = onClick => {
 export default withProps(({ onClick, ...props }) => ({
   onKeyDown: createOnKeyDown(onClick),
   onClick,
-  ...props
+  ...props,
 }));

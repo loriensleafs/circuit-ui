@@ -22,8 +22,8 @@ export default {
   title: 'Components/Calendar/CalendarTagTwoStep',
   component: CalendarTagTwoStep,
   parameters: {
-    jest: ['CalendarTagTwoStep']
-  }
+    jest: ['CalendarTagTwoStep'],
+  },
 };
 
 export const base = () => (

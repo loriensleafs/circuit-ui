@@ -73,7 +73,7 @@ describe('Badge', () => {
   it('should be clickable', () => {
     const onClick = jest.fn();
     const { getByTestId } = render(
-      <Badge onClick={onClick} data-testid="badge" />
+      <Badge onClick={onClick} data-testid="badge" />,
     );
 
     act(() => {

@@ -35,7 +35,7 @@ const TagsWrapper = styled('div')`
 class AutoCompleteTags extends Component {
   static propTypes = {
     onChange: PropTypes.func.isRequired,
-    availableTags: PropTypes.arrayOf(PropTypes.string).isRequired
+    availableTags: PropTypes.arrayOf(PropTypes.string).isRequired,
   };
 
   state = { tags: [] };
@@ -51,14 +51,14 @@ class AutoCompleteTags extends Component {
 
   handleRemoveTag = newTag =>
     this.setState(({ tags }) => ({
-      tags: remove(tag => tag === newTag)(tags)
+      tags: remove(tag => tag === newTag)(tags),
     }));
 
   render() {
     const { availableTags } = this.props;
     const { tags } = this.state;
     const autoCompleteItems = availableTags.filter(
-      item => !includes(item, tags)
+      item => !includes(item, tags),
     );
 
     return (

@@ -26,8 +26,8 @@ export default {
   component: SearchInput,
   parameters: {
     docs: { page: docs },
-    jest: ['SearchInput']
-  }
+    jest: ['SearchInput'],
+  },
 };
 
 // SearchInputs always need labels for accessibility.

@@ -66,7 +66,7 @@ const disabledStyles = ({ theme, disabled }) =>
 const PageButton = styled(Button)(baseStyles, primaryStyles, disabledStyles);
 
 PageButton.defaultProps = {
-  size: Button.KILO
+  size: Button.KILO,
 };
 
 /**

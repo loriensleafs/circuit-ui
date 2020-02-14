@@ -23,7 +23,7 @@ import LoadingIcon from '../LoadingIcon';
 import { DISABLED, ACTIVE, SUCCESS, ERROR } from '../../constants';
 import {
   BUTTON_PROP_TYPES,
-  BUTTON_DEFAULT_PROPS
+  BUTTON_DEFAULT_PROPS,
 } from '../../../Button/constants';
 
 const childrenWrapperStyles = ({ theme }) => css`
@@ -73,13 +73,13 @@ const LoadingButton = ({
 LoadingButton.propTypes = {
   ...BUTTON_PROP_TYPES,
   loadingState: PropTypes.oneOf([DISABLED, ACTIVE, SUCCESS, ERROR]),
-  isLoading: PropTypes.bool
+  isLoading: PropTypes.bool,
 };
 
 LoadingButton.defaultProps = {
   ...BUTTON_DEFAULT_PROPS,
   loadingState: DISABLED,
-  isLoading: false
+  isLoading: false,
 };
 
 export default LoadingButton;

@@ -26,12 +26,12 @@ import { TOP, BOTTOM, LEFT, RIGHT, START, END, CENTER } from './constants';
 export const deprecatedPropType = (propType, explanation = '') => (
   props,
   propName,
-  componentName
+  componentName,
 ) => {
   if (!isNil(props[propName])) {
     deprecate(
       // eslint-disable-next-line max-len
-      `"${propName}" prop of "${componentName}" has been deprecated.\n${explanation}`
+      `"${propName}" prop of "${componentName}" has been deprecated.\n${explanation}`,
     );
   }
 
@@ -39,7 +39,7 @@ export const deprecatedPropType = (propType, explanation = '') => (
     { [propName]: propType },
     props,
     propName,
-    componentName
+    componentName,
   );
 };
 
@@ -47,19 +47,19 @@ export const eitherOrPropType = (
   firstProp,
   secondProp,
   propType,
-  isRequired = false
+  isRequired = false,
 ) => (props, propName, componentName) => {
   const hasFirstProp = props[firstProp];
   const hasSecondProp = props[secondProp];
   /* eslint-disable max-len */
   if (hasFirstProp && hasSecondProp) {
     return new Error(
-      `You can provide either '${firstProp}' or '${secondProp}' to '${componentName}' but not both.`
+      `You can provide either '${firstProp}' or '${secondProp}' to '${componentName}' but not both.`,
     );
   }
   if (isRequired && !hasFirstProp && !hasSecondProp) {
     return new Error(
-      `You must provide either '${firstProp}' or '${secondProp}' to '${componentName}' (but not both).`
+      `You must provide either '${firstProp}' or '${secondProp}' to '${componentName}' (but not both).`,
     );
   }
   /* eslint-enable max-len */
@@ -68,20 +68,20 @@ export const eitherOrPropType = (
     { [propName]: propType },
     props,
     propName,
-    componentName
+    componentName,
   );
 };
 
 export const childrenPropType = PropTypes.oneOfType([
   PropTypes.arrayOf(PropTypes.node),
-  PropTypes.node
+  PropTypes.node,
 ]);
 
 export const childrenRenderPropType = PropTypes.func;
 
 const typePropType = PropTypes.shape({
   fontSize: PropTypes.string,
-  lineHeight: PropTypes.string
+  lineHeight: PropTypes.string,
 }).isRequired;
 
 export const themePropType = PropTypes.shape({
@@ -127,7 +127,7 @@ export const themePropType = PropTypes.shape({
     // Misc
     shadow: PropTypes.string.isRequired,
     bodyBg: PropTypes.string.isRequired,
-    bodyColor: PropTypes.string.isRequired
+    bodyColor: PropTypes.string.isRequired,
   }).isRequired,
   spacings: PropTypes.shape({
     bit: PropTypes.string.isRequired,
@@ -138,16 +138,16 @@ export const themePropType = PropTypes.shape({
     tera: PropTypes.string.isRequired,
     peta: PropTypes.string.isRequired,
     exa: PropTypes.string.isRequired,
-    zetta: PropTypes.string.isRequired
+    zetta: PropTypes.string.isRequired,
   }).isRequired,
   iconSizes: PropTypes.shape({
     kilo: PropTypes.string.isRequired,
-    mega: PropTypes.string.isRequired
+    mega: PropTypes.string.isRequired,
   }),
   borderRadius: PropTypes.shape({
     kilo: PropTypes.string,
     mega: PropTypes.string,
-    giga: PropTypes.string
+    giga: PropTypes.string,
   }).isRequired,
   typography: PropTypes.shape({
     headings: PropTypes.shape({
@@ -157,50 +157,50 @@ export const themePropType = PropTypes.shape({
       tera: typePropType,
       peta: typePropType,
       exa: typePropType,
-      zetta: typePropType
+      zetta: typePropType,
     }).isRequired,
     subHeadings: PropTypes.shape({
       kilo: typePropType,
-      mega: typePropType
+      mega: typePropType,
     }).isRequired,
     text: PropTypes.shape({
       kilo: typePropType,
       mega: typePropType,
-      giga: typePropType
-    }).isRequired
+      giga: typePropType,
+    }).isRequired,
   }),
   fontStack: PropTypes.shape({
     default: PropTypes.string,
-    mono: PropTypes.string
+    mono: PropTypes.string,
   }),
   fontWeight: PropTypes.shape({
     regular: PropTypes.string.isRequired,
-    bold: PropTypes.string.isRequired
-  }).isRequired
+    bold: PropTypes.string.isRequired,
+  }).isRequired,
 });
 
 export const componentsPropType = PropTypes.shape({
-  Link: PropTypes.oneOfType([PropTypes.element, PropTypes.func])
+  Link: PropTypes.oneOfType([PropTypes.element, PropTypes.func]),
 });
 
 export const localePropType = isRequired => (
   props,
   propName,
-  componentName
+  componentName,
 ) => {
   // eslint-disable-next-line react/destructuring-assignment
   const prop = props[propName];
   if (isRequired && (!prop || !prop.length)) {
     return new Error(
       `Prop \`${propName}\` is marked as required in \`${componentName}\`,` +
-        `but received \`${prop}\`.`
+        `but received \`${prop}\`.`,
     );
   }
 
   if (!/[a-z]{2}-[A-Z]{2}/.test(prop)) {
     return new Error(
       `Invalid prop \`${propName}\` supplied to` +
-        ` \`${componentName}\`. Validation failed.`
+        ` \`${componentName}\`. Validation failed.`,
     );
   }
 

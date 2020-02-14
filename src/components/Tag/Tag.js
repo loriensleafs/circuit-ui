@@ -20,7 +20,7 @@ import { css } from '@emotion/core';
 
 import {
   eitherOrPropType,
-  childrenPropType
+  childrenPropType,
 } from '../../util/shared-prop-types';
 import { textMega, shadowBorder } from '../../styles/style-helpers';
 import DefaultCloseButton from '../CloseButton';
@@ -44,7 +44,7 @@ const closeButtonSelectedStyles = ({ selected, theme }) =>
 
 const CloseButton = styled(DefaultCloseButton)(
   closeButtonStyles,
-  closeButtonSelectedStyles
+  closeButtonSelectedStyles,
 );
 
 const tagStyles = ({ theme }) => css`
@@ -172,7 +172,7 @@ Tag.propTypes = {
   /**
    * Triggers selected styles on the tag.
    */
-  selected: PropTypes.bool
+  selected: PropTypes.bool,
 };
 
 Tag.defaultProps = {
@@ -180,7 +180,7 @@ Tag.defaultProps = {
   icon: null,
   onRemove: null,
   selected: false,
-  labelRemoveButton: 'remove'
+  labelRemoveButton: 'remove',
 };
 
 /**

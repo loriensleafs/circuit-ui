@@ -21,8 +21,8 @@ export default {
   title: 'Components/Calendar/SingleDayPicker',
   component: SingleDayPicker,
   parameters: {
-    jest: ['SingleDayPicker']
-  }
+    jest: ['SingleDayPicker'],
+  },
 };
 
 const SingleDayPickerWithState = props => {

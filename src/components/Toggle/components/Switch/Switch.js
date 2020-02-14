@@ -129,13 +129,13 @@ Switch.propTypes = {
   /**
    * Label for the 'off' state. Important for accessibility.
    */
-  labelOff: PropTypes.string
+  labelOff: PropTypes.string,
 };
 
 Switch.defaultProps = {
   on: false,
   labelOn: 'on',
-  labelOff: 'off'
+  labelOff: 'off',
 };
 
 /**

@@ -29,7 +29,7 @@ const calculateSize = ({ theme, size }) => {
   const sizeMap = {
     [KILO]: theme.spacings.byte,
     [MEGA]: theme.spacings.mega,
-    [GIGA]: theme.spacings.tera
+    [GIGA]: theme.spacings.tera,
   };
   return sizeMap[size];
 };
@@ -46,7 +46,7 @@ const progressStyles = ({ theme, size, value, max }) => {
   const outerBorderRadius = theme.borderRadius.mega;
   const innerBorderRadiusLeft = `${subtractUnit(
     outerBorderRadius,
-    outerBorderWidth
+    outerBorderWidth,
   )}`;
   const innerBorderRadiusRight =
     value && max && (value / max) * 100 === 100 ? innerBorderRadiusLeft : 0;
@@ -138,14 +138,14 @@ ProgressBar.propTypes = {
   /**
    * Child nodes to be rendered as the label.
    */
-  children: childrenPropType
+  children: childrenPropType,
 };
 
 ProgressBar.defaultProps = {
   size: ProgressBar.KILO,
   max: 1,
   value: 0,
-  children: null
+  children: null,
 };
 
 /**

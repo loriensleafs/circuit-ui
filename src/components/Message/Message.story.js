@@ -27,8 +27,8 @@ export default {
   component: Message,
   parameters: {
     docs: { page: docs },
-    jest: ['Message']
-  }
+    jest: ['Message'],
+  },
 };
 
 export const base = () => (

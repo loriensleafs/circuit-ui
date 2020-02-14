@@ -19,7 +19,7 @@ import Toggle from '.';
 
 const defaultProps = {
   label: 'Label',
-  explanation: 'A longer explanation'
+  explanation: 'A longer explanation',
 };
 
 describe('Toggle', () => {

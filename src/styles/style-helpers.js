@@ -126,7 +126,7 @@ const transformUnit = (values, transform, allowMultipleUnits = true) => {
     const newUnit = getUnit(value, unit);
     return {
       amount: amount ? transform(amount, newAmount) : newAmount,
-      unit: newUnit || unit
+      unit: newUnit || unit,
     };
   }, {});
   return `${transformedValue.amount}${transformedValue.unit}`;
@@ -163,13 +163,13 @@ export const clearfix = css`
 `;
 
 export const calculatePadding = ({ theme, size: buttonSize }) => (
-  diff = '0px'
+  diff = '0px',
 ) => {
   const sizeMap = {
     /* eslint-disable max-len */
     [KILO]: `calc(${theme.spacings.bit} - ${diff}) calc(${theme.spacings.mega} - ${diff})`,
     [MEGA]: `calc(${theme.spacings.byte} - ${diff}) calc(${theme.spacings.giga} - ${diff})`,
-    [GIGA]: `calc(${theme.spacings.kilo} - ${diff}) calc(${theme.spacings.tera} - ${diff})`
+    [GIGA]: `calc(${theme.spacings.kilo} - ${diff}) calc(${theme.spacings.tera} - ${diff})`,
     /* eslint-enable max-len */
   };
 

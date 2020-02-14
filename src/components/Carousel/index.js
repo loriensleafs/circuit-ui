@@ -24,7 +24,7 @@ import {
   ButtonList,
   PlayButton,
   NextButton,
-  PrevButton
+  PrevButton,
 } from './components/Buttons';
 
 import Carousel from './Carousel';
@@ -40,7 +40,7 @@ export const CarouselComposer = {
   ButtonList,
   PlayButton,
   NextButton,
-  PrevButton
+  PrevButton,
 };
 
 export default Carousel;

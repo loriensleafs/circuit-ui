@@ -98,11 +98,11 @@ PaginationContainer.propTypes = {
     .isRequired,
   previousLabel: PropTypes.oneOfType([PropTypes.string, PropTypes.object])
     .isRequired,
-  footer: PropTypes.string
+  footer: PropTypes.string,
 };
 
 PaginationContainer.defaultProps = {
-  footer: null
+  footer: null,
 };
 
 export default PaginationContainer;

@@ -25,8 +25,8 @@ export default {
   component: ProgressBar,
   parameters: {
     docs: { page: docs },
-    jest: ['ProgressBar']
-  }
+    jest: ['ProgressBar'],
+  },
 };
 
 const progressBarStyles = css`
@@ -40,9 +40,9 @@ export const base = () => {
     {
       kilo: ProgressBar.KILO,
       mega: ProgressBar.MEGA,
-      giga: ProgressBar.GIGA
+      giga: ProgressBar.GIGA,
     },
-    ProgressBar.KILO
+    ProgressBar.KILO,
   );
   const max = number('Maximum value', 10);
   const value = number('Value', 3);

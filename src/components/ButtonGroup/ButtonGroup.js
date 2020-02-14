@@ -54,7 +54,7 @@ const baseStyles = ({ theme }) => css`
 const alignmentMap = {
   [directions.LEFT]: 'flex-start',
   [directions.CENTER]: 'center',
-  [directions.RIGHT]: 'flex-end'
+  [directions.RIGHT]: 'flex-end',
 };
 
 const alignmentStyles = ({ align }) => {
@@ -83,7 +83,7 @@ const inlineMobileStyles = ({ theme, inlineMobile }) =>
 const ButtonGroupList = styled('ul')(
   baseStyles,
   alignmentStyles,
-  inlineMobileStyles
+  inlineMobileStyles,
 );
 
 /**
@@ -110,17 +110,17 @@ ButtonGroup.propTypes = {
   align: PropTypes.oneOf([
     ButtonGroup.LEFT,
     ButtonGroup.CENTER,
-    ButtonGroup.RIGHT
+    ButtonGroup.RIGHT,
   ]),
   /**
    * Whether to display buttons inline on mobile.
    */
-  inlineMobile: PropTypes.bool
+  inlineMobile: PropTypes.bool,
 };
 
 ButtonGroup.defaultProps = {
   align: ButtonGroup.RIGHT,
-  inlineMobile: false
+  inlineMobile: false,
 };
 
 /**

@@ -65,11 +65,11 @@ Blockquote.propTypes = {
    * A Circuit UI body text size.
    */
   size: PropTypes.oneOf([Blockquote.KILO, Blockquote.MEGA, Blockquote.GIGA])
-    .isRequired
+    .isRequired,
 };
 
 Blockquote.defaultProps = {
-  size: Blockquote.KILO
+  size: Blockquote.KILO,
 };
 
 /**

@@ -26,7 +26,7 @@ describe('Component styles', () => {
     const { components } = config;
     const actual = componentStyles({
       theme,
-      components
+      components,
     });
     expect(typeof actual).toBe('string');
     components.forEach(({ name }) => {
@@ -41,13 +41,13 @@ describe('Component styles', () => {
         component: fixtures.StyledComponent,
         props: {
           value: PropTypes.string,
-          disabled: PropTypes.bool
-        }
+          disabled: PropTypes.bool,
+        },
       };
       const components = [component];
       const actual = componentStyles({
         theme,
-        components
+        components,
       });
       expect(typeof actual).toBe('string');
       expect(actual).toMatchSnapshot();
@@ -58,7 +58,7 @@ describe('Component styles', () => {
       const components = [component];
       const actual = componentStyles({
         theme,
-        components
+        components,
       });
       expect(typeof actual).toBe('string');
       expect(actual).toMatchSnapshot();

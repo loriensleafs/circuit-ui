@@ -28,7 +28,7 @@ const iconSizes = [
   CardSchemes.BYTE,
   CardSchemes.KILO,
   CardSchemes.MEGA,
-  CardSchemes.GIGA
+  CardSchemes.GIGA,
 ];
 
 export default {
@@ -36,8 +36,8 @@ export default {
   component: CardSchemes,
   parameters: {
     docs: { page: docs },
-    jest: ['CardSchemes']
-  }
+    jest: ['CardSchemes'],
+  },
 };
 
 export const base = () => (

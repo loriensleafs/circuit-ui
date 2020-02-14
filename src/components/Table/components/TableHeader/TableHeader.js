@@ -195,14 +195,14 @@ TableHeader.propTypes = {
 };
 
 TableHeader.defaultProps = {
-  align: TableHeader.LEFT,
-  scope: TableHeader.COL,
-  fixed: false,
-  sortable: false,
-  isHovered: false,
-  children: null,
-  sortDirection: null,
-  isSorted: false,
+  'align': TableHeader.LEFT,
+  'scope': TableHeader.COL,
+  'fixed': false,
+  'sortable': false,
+  'isHovered': false,
+  'children': null,
+  'sortDirection': null,
+  'isSorted': false,
   'data-testid': 'table-header'
 };
 

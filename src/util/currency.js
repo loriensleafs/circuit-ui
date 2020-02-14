@@ -41,70 +41,70 @@ export const CURRENCY_FORMATS = {
     'pt-PT': { prependSymbol: false, fractionalPrecision: 2, addSpace: true },
     'sk-SK': { prependSymbol: false, fractionalPrecision: 2, addSpace: true },
     'sl-SI': { prependSymbol: false, fractionalPrecision: 2, addSpace: true },
-    default: { prependSymbol: false, fractionalPrecision: 2, addSpace: true }
+    'default': { prependSymbol: false, fractionalPrecision: 2, addSpace: true }
   },
   CHF: {
     'de-CH': { prependSymbol: true, fractionalPrecision: 2, addSpace: true },
     'it-CH': { prependSymbol: true, fractionalPrecision: 2, addSpace: true },
     'fr-CH': { prependSymbol: true, fractionalPrecision: 2, addSpace: true },
-    default: { prependSymbol: true, fractionalPrecision: 2, addSpace: false }
+    'default': { prependSymbol: true, fractionalPrecision: 2, addSpace: false }
   },
   GBP: {
     'en-GB': { prependSymbol: true, fractionalPrecision: 2, addSpace: false },
-    default: { prependSymbol: true, fractionalPrecision: 2, addSpace: false }
+    'default': { prependSymbol: true, fractionalPrecision: 2, addSpace: false }
   },
   PLN: {
     'pl-PL': { prependSymbol: false, fractionalPrecision: 2, addSpace: true },
-    default: { prependSymbol: false, fractionalPrecision: 2, addSpace: true }
+    'default': { prependSymbol: false, fractionalPrecision: 2, addSpace: true }
   },
   RUB: {
     'ru-RU': { prependSymbol: false, fractionalPrecision: 2, addSpace: true },
-    default: { prependSymbol: false, fractionalPrecision: 2, addSpace: true }
+    'default': { prependSymbol: false, fractionalPrecision: 2, addSpace: true }
   },
   BRL: {
     'pt-BR': { prependSymbol: true, fractionalPrecision: 2, addSpace: true },
-    default: { prependSymbol: true, fractionalPrecision: 2, addSpace: true }
+    'default': { prependSymbol: true, fractionalPrecision: 2, addSpace: true }
   },
   SEK: {
     'sv-SE': { prependSymbol: false, fractionalPrecision: 2, addSpace: true },
-    default: { prependSymbol: false, fractionalPrecision: 2, addSpace: true }
+    'default': { prependSymbol: false, fractionalPrecision: 2, addSpace: true }
   },
   USD: {
     'en-US': { prependSymbol: true, fractionalPrecision: 2, addSpace: false },
-    default: { prependSymbol: true, fractionalPrecision: 2, addSpace: false }
+    'default': { prependSymbol: true, fractionalPrecision: 2, addSpace: false }
   },
   CLP: {
     'es-CL': { prependSymbol: true, fractionalPrecision: 0, addSpace: true },
-    default: { prependSymbol: true, fractionalPrecision: 0, addSpace: true }
+    'default': { prependSymbol: true, fractionalPrecision: 0, addSpace: true }
   },
   BGN: {
     'bg-BG': { prependSymbol: false, fractionalPrecision: 2, addSpace: true },
-    default: { prependSymbol: false, fractionalPrecision: 2, addSpace: true }
+    'default': { prependSymbol: false, fractionalPrecision: 2, addSpace: true }
   },
   CZK: {
     'cs-CZ': { prependSymbol: false, fractionalPrecision: 2, addSpace: true },
-    default: { prependSymbol: false, fractionalPrecision: 2, addSpace: true }
+    'default': { prependSymbol: false, fractionalPrecision: 2, addSpace: true }
   },
   DKK: {
     'da-DK': { prependSymbol: false, fractionalPrecision: 2, addSpace: true },
-    default: { prependSymbol: false, fractionalPrecision: 2, addSpace: true }
+    'default': { prependSymbol: false, fractionalPrecision: 2, addSpace: true }
   },
   HUF: {
     'hu-HU': { prependSymbol: false, fractionalPrecision: 0, addSpace: true },
-    default: { prependSymbol: false, fractionalPrecision: 0, addSpace: true }
+    'default': { prependSymbol: false, fractionalPrecision: 0, addSpace: true }
   },
   NOK: {
     'nb-NO': { prependSymbol: false, fractionalPrecision: 2, addSpace: true },
     'nn-NO': { prependSymbol: false, fractionalPrecision: 2, addSpace: true },
-    default: { prependSymbol: false, fractionalPrecision: 2, addSpace: true }
+    'default': { prependSymbol: false, fractionalPrecision: 2, addSpace: true }
   },
   RON: {
     'ro-RO': { prependSymbol: false, fractionalPrecision: 2, addSpace: true },
-    default: { prependSymbol: false, fractionalPrecision: 2, addSpace: true }
+    'default': { prependSymbol: false, fractionalPrecision: 2, addSpace: true }
   },
   HRK: {
     'hr-HR': { prependSymbol: false, fractionalPrecision: 2, addSpace: true },
-    default: { prependSymbol: false, fractionalPrecision: 2, addSpace: true }
+    'default': { prependSymbol: false, fractionalPrecision: 2, addSpace: true }
   }
 };
 

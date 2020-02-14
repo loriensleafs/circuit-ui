@@ -18,9 +18,9 @@ import React from 'react';
 import AutoCompleteInput from './AutoCompleteInput';
 
 const items = [
-  { value: '1111111111111', 'data-testid': 'autocomplete-input-item' },
-  { value: '2222222222222', 'data-testid': 'autocomplete-input-item' },
-  { value: '3333333333333', 'data-testid': 'autocomplete-input-item' }
+  { 'value': '1111111111111', 'data-testid': 'autocomplete-input-item' },
+  { 'value': '2222222222222', 'data-testid': 'autocomplete-input-item' },
+  { 'value': '3333333333333', 'data-testid': 'autocomplete-input-item' }
 ];
 
 describe('AutoCompleteInput', () => {

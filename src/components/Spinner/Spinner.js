@@ -103,8 +103,8 @@ Spinner.propTypes = {
 };
 
 Spinner.defaultProps = {
-  dark: false,
-  active: true,
+  'dark': false,
+  'active': true,
 
   /**
    * Accessibilty attributes.
@@ -112,7 +112,7 @@ Spinner.defaultProps = {
   /**
    * Indicates that element has been dynamically updated.
    */
-  role: 'alert',
+  'role': 'alert',
   /**
    * Tells screen reader to wait until loading is complete.
    */

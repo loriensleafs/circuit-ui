@@ -33,7 +33,7 @@ export default {
   },
 };
 
-const cardStyles = theme => css`
+const cardStyles = (theme) => css`
   width: 500px;
   height: 150px;
   max-width: 90%;
@@ -41,7 +41,7 @@ const cardStyles = theme => css`
   margin-bottom: ${theme.spacings.mega};
 `;
 
-const contentStyles = theme => css`
+const contentStyles = (theme) => css`
   background: ${theme.colors.n200};
   width: 100%;
   height: 100%;

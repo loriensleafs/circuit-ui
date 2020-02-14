@@ -76,7 +76,7 @@ const itemHighlight = ({ selected, theme }) =>
 
 const Item = styled('div')(itemBaseStyles, itemHighlight);
 
-const filterItems = inputValue => item => {
+const filterItems = (inputValue) => (item) => {
   const value = isString(item) ? item : item.value;
   return (
     !inputValue ||
@@ -110,7 +110,7 @@ export default class AutoCompleteInput extends Component {
     clearOnSelect: false,
   };
 
-  handleChange = value => {
+  handleChange = (value) => {
     const { clearOnSelect, onChange } = this.props;
 
     if (value) {
@@ -122,7 +122,7 @@ export default class AutoCompleteInput extends Component {
     }
   };
 
-  handleDownShiftRef = ref => {
+  handleDownShiftRef = (ref) => {
     this.downshiftRef = ref;
   };
 

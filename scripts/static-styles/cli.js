@@ -36,7 +36,7 @@ function main() {
       options: ['all', 'none', ...componentOpts],
       type: 'array',
       default: 'all',
-      coerce: val => {
+      coerce: (val) => {
         if (val.length === 1) {
           if (val[0] === 'all') {
             return componentOpts;

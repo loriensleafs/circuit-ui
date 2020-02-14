@@ -42,7 +42,7 @@ const StyledLabel = styled('label')`
   ${visuallyHiddenStyles};
 `;
 
-const Label = props => <StyledLabel {...props} />;
+const Label = (props) => <StyledLabel {...props} />;
 
 Label.propTypes = {
   /**

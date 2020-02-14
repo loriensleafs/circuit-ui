@@ -61,7 +61,7 @@ const noMarginStyles = ({ noMargin }) =>
   `;
 
 const HeadingElement = styled('h2', {
-  shouldForwardProp: prop => isPropValid(prop) && prop !== 'size',
+  shouldForwardProp: (prop) => isPropValid(prop) && prop !== 'size',
 })`
   ${baseStyles};
   ${sizeStyles};
@@ -71,7 +71,7 @@ const HeadingElement = styled('h2', {
 /**
  * A flexible heading component capable of rendering using any HTML heading tag.
  */
-const Heading = props => <HeadingElement {...props} />;
+const Heading = (props) => <HeadingElement {...props} />;
 
 Heading.KILO = KILO;
 Heading.MEGA = MEGA;

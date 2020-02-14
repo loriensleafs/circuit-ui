@@ -25,7 +25,7 @@ export default {
   },
 };
 
-const SingleDayPickerWithState = props => {
+const SingleDayPickerWithState = (props) => {
   const [date, setDate] = useState(null);
   const [focusedInput, setFocusedInput] = useState(null);
 

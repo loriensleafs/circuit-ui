@@ -32,7 +32,7 @@ const StyledIconButton = styled(IconButton)(
 /**
  * A generic close button.
  */
-const CloseButton = props => (
+const CloseButton = (props) => (
   <StyledIconButton {...props}>
     <CloseIcon />
   </StyledIconButton>

@@ -17,7 +17,7 @@ import { css } from '@emotion/core';
 
 import { textMega } from '../../styles/style-helpers';
 
-export const createBaseStyles = theme => css`
+export const createBaseStyles = (theme) => css`
   /**
    * reset.css
    * http://meyerweb.com/eric/tools/css/reset/

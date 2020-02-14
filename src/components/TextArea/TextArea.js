@@ -27,7 +27,7 @@ const textAreaStyles = css`
 /**
  * TextArea component for forms.
  */
-const TextArea = props => (
+const TextArea = (props) => (
   <Input {...props} inputStyles={textAreaStyles} as="textarea" />
 );
 

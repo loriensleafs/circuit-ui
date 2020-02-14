@@ -28,11 +28,11 @@ export default {
 };
 
 /* eslint-disable react/prop-types */
-const ToggleWithState = props => {
+const ToggleWithState = (props) => {
   const [on, setOn] = useState(false);
 
   const handleChange = () => {
-    setOn(prev => !prev);
+    setOn((prev) => !prev);
   };
 
   return <Toggle {...props} on={on} onChange={handleChange} />;

@@ -49,7 +49,7 @@ const CardSchemes = ({ iconIds, size, ...props }) => {
 
   return (
     <CardSchemeWrapper {...props}>
-      {iconIds.map(iconId => (
+      {iconIds.map((iconId) => (
         <PaymentMethodIconWrap key={iconId}>
           <PaymentMethodIcon size={size} iconId={iconId} />
         </PaymentMethodIconWrap>

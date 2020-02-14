@@ -29,7 +29,7 @@ export default {
 const HamburderWithState = () => {
   const [active, setActive] = useState(false);
   const handleClick = () => {
-    setActive(prev => !prev);
+    setActive((prev) => !prev);
   };
   return <Hamburger isActive={active} onClick={handleClick} />;
 };

@@ -56,7 +56,7 @@ const centeredStyles = () => css`
   transform: translate(-50%, -50%);
 `;
 
-const sizeStyles = label => ({ theme, size }) => {
+const sizeStyles = (label) => ({ theme, size }) => {
   const sizeMap = {
     [KILO]: theme.spacings.mega,
     [MEGA]: theme.spacings.giga,

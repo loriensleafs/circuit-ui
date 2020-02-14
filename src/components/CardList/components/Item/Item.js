@@ -51,7 +51,7 @@ const baseStyles = ({ theme }) => css`
   }
 `;
 
-const getBorderStyles = theme => css`
+const getBorderStyles = (theme) => css`
   outline: none;
 
   &::after {

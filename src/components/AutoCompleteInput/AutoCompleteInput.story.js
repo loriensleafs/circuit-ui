@@ -33,7 +33,7 @@ export default {
 };
 
 // Inputs always need labels for accessibility.
-const AutoCompleteInputWithLabel = props => {
+const AutoCompleteInputWithLabel = (props) => {
   const id = uniqueId();
   return (
     <Label htmlFor={id}>

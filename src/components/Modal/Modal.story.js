@@ -55,7 +55,7 @@ const PageWithModal = ({ modal }) => (
 
 const defaultModal = {
   children: () => <ModalWrapper>Hello World!</ModalWrapper>,
-  onClose: e => {
+  onClose: (e) => {
     action('Modal closed')(e);
   },
 };
@@ -114,7 +114,7 @@ export const withFooter = () => (
             <ButtonGroup>
               <Button
                 secondary
-                onClick={e => {
+                onClick={(e) => {
                   action('Cancel button clicked')(e);
                   onClose(e);
                 }}
@@ -123,7 +123,7 @@ export const withFooter = () => (
               </Button>
               <Button
                 primary
-                onClick={e => {
+                onClick={(e) => {
                   action('Confirm button clicked')(e);
                   onClose(e);
                 }}

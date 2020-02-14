@@ -44,7 +44,7 @@ const FIXED_TRANSITION = `${TRANSITION_DURATION}ms cubic-bezier(0, 0.37, 0.64, 1
  * Documentation: http://reactcommunity.org/react-modal/styles/classes.html
  */
 
-const modalClassName = css => ({
+const modalClassName = (css) => ({
   base: ({ theme }) => css`
     label: modal;
     outline: none;
@@ -107,7 +107,7 @@ const modalClassName = css => ({
   /* eslint-enable max-len */
 });
 
-const overlayClassName = css => ({
+const overlayClassName = (css) => ({
   base: ({ theme }) => css`
     label: modal__overlay;
     background: ${transparentize(0.84, theme.colors.shadow)};
@@ -150,7 +150,7 @@ const Modal = ({
   ...props
 }) => {
   ReactModal.setAppElement(appElement);
-  const getClassValues = mapValues(styleFn => styleFn({ theme }));
+  const getClassValues = mapValues((styleFn) => styleFn({ theme }));
   return (
     <ClassNames>
       {({ css }) => {

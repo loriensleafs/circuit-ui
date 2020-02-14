@@ -25,7 +25,7 @@ export default {
   },
 };
 
-const RangePickerWithState = props => {
+const RangePickerWithState = (props) => {
   const [{ startDate, endDate }, setRange] = useState({});
   const [focusedInput, setFocusedInput] = useState(null);
 

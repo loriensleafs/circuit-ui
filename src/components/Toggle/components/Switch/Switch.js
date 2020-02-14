@@ -24,7 +24,7 @@ const TRACK_HEIGHT = 24;
 const KNOB_SIZE = 16;
 const ANIMATION_TIMING = '200ms ease-in-out';
 
-const knobShadow = color => `0 2px 0 0 ${color}`;
+const knobShadow = (color) => `0 2px 0 0 ${color}`;
 
 const trackBaseStyles = ({ theme }) => css`
   label: toggle__switch;

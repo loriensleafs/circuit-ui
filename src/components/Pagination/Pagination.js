@@ -128,7 +128,7 @@ const Pagination = ({
       {hasOmittedPreviousPages && (
         <PageButton disabled>{Separator()}</PageButton>
       )}
-      {previousValues.map(item => (
+      {previousValues.map((item) => (
         <PaginationButtonContainer
           key={item}
           currentPage={item}
@@ -144,7 +144,7 @@ const Pagination = ({
           onChange={onChange}
         />
       )}
-      {nextValues.map(item => (
+      {nextValues.map((item) => (
         <PaginationButtonContainer
           key={item}
           currentPage={item}

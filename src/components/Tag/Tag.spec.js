@@ -18,7 +18,7 @@ import React from 'react';
 import Tag from '.';
 
 describe('Tag', () => {
-  const DummyIcon = props => (
+  const DummyIcon = (props) => (
     <svg {...props} fill="#000000" xmlns="http://www.w3.org/2000/svg">
       <path />
     </svg>

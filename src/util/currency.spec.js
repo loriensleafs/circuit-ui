@@ -68,7 +68,7 @@ describe('currency', () => {
     const inputs = ['11.23', 1000, 0.98];
 
     const testCurrency = (amounts, ccy, locale, expected) => {
-      const actual = amounts.map(amount =>
+      const actual = amounts.map((amount) =>
         currency.formatCurrency(amount, ccy, locale),
       );
       expect(actual).toEqual(expected);

@@ -31,7 +31,7 @@ export default {
 };
 
 // CurrencyInputs always need labels for accessibility.
-const CurrencyInputWithLabel = props => {
+const CurrencyInputWithLabel = (props) => {
   const id = uniqueId();
   return (
     <Label htmlFor={id}>

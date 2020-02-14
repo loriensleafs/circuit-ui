@@ -134,7 +134,7 @@ const containerNoMarginStyles = ({ noMargin }) =>
  * Used with css prop directly, so it does not require prop
  * destructuring.
  */
-const prefixStyles = theme => css`
+const prefixStyles = (theme) => css`
   label: select__prefix;
   display: block;
   position: absolute;

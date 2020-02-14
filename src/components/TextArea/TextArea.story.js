@@ -31,7 +31,7 @@ export default {
 };
 
 // TextAreas always need labels for accessibility.
-const TextAreaWithLabel = props => {
+const TextAreaWithLabel = (props) => {
   const id = uniqueId();
   return (
     <Label htmlFor={id}>

@@ -156,7 +156,7 @@ const inputSuffixStyles = ({ theme, hasSuffix }) =>
  * Used with css prop directly, so it does not require prop
  * destructuring.
  */
-const prefixStyles = theme => css`
+const prefixStyles = (theme) => css`
   label: input__prefix;
   position: absolute;
   top: 1px;
@@ -170,7 +170,7 @@ const prefixStyles = theme => css`
  * Used with css prop directly, so it does not require prop
  * destructuring.
  */
-const suffixStyles = theme => css`
+const suffixStyles = (theme) => css`
   label: input__suffix;
   position: absolute;
   top: 1px;
@@ -222,7 +222,7 @@ const ValidationIconWrapper = styled('div')(
   validationIconActiveStyles,
 );
 
-const iconStyles = type => css`
+const iconStyles = (type) => css`
   label: ${`input__validation-${type}`};
   display: block;
   height: 100%;
@@ -327,7 +327,7 @@ const StyledInput = ({
   );
 };
 
-const Input = props => <StyledInput {...props} />;
+const Input = (props) => <StyledInput {...props} />;
 
 Input.LEFT = directions.LEFT;
 Input.RIGHT = directions.RIGHT;

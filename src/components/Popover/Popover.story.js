@@ -32,7 +32,7 @@ export default {
   },
 };
 
-const PopoverWithState = props => {
+const PopoverWithState = (props) => {
   const [open, setOpen] = useState(false);
 
   const { closeOnButtonClick, ...restProps } = props;
@@ -43,7 +43,7 @@ const PopoverWithState = props => {
       {...restProps}
       renderPopover={() => <Card>Popover Content</Card>}
       renderReference={() => (
-        <Button size={Button.KILO} onClick={() => setOpen(prev => !prev)}>
+        <Button size={Button.KILO} onClick={() => setOpen((prev) => !prev)}>
           {open ? 'Hide' : 'Show'}
         </Button>
       )}

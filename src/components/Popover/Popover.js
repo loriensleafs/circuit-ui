@@ -193,11 +193,11 @@ class Popover extends Component {
     }
   };
 
-  receiveButtonRef = ref => {
+  receiveButtonRef = (ref) => {
     this.buttonRef = ref;
   };
 
-  receivePopoverRef = ref => {
+  receivePopoverRef = (ref) => {
     this.popoverRef = ref;
   };
 

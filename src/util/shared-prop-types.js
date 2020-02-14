@@ -183,7 +183,7 @@ export const componentsPropType = PropTypes.shape({
   Link: PropTypes.oneOfType([PropTypes.element, PropTypes.func]),
 });
 
-export const localePropType = isRequired => (
+export const localePropType = (isRequired) => (
   props,
   propName,
   componentName,

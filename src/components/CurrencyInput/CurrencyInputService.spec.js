@@ -35,7 +35,7 @@ describe('CurrencyInputService', () => {
 
   describe('normalizing values', () => {
     it('should normalize integers to a decimal number', () => {
-      locales.forEach(locale => {
+      locales.forEach((locale) => {
         const { thousand } = NUMBER_SEPARATORS[locale];
         const value = `1${thousand}000`;
         const expected = 1000.0;
@@ -45,7 +45,7 @@ describe('CurrencyInputService', () => {
     });
 
     it('should normalize decimals with only one decimal digit to a decimal number', () => {
-      locales.forEach(locale => {
+      locales.forEach((locale) => {
         const { thousand, decimal } = NUMBER_SEPARATORS[locale];
         const value = `1${thousand}000${decimal}5`;
         const expected = 1000.5;
@@ -55,7 +55,7 @@ describe('CurrencyInputService', () => {
     });
 
     it('should normalize decimal values to a decimal number', () => {
-      locales.forEach(locale => {
+      locales.forEach((locale) => {
         const { thousand, decimal } = NUMBER_SEPARATORS[locale];
         const value = `1${thousand}000${decimal}50`;
         const expected = 1000.5;
@@ -65,7 +65,7 @@ describe('CurrencyInputService', () => {
     });
 
     it('should correctly normalize values ending in "00"', () => {
-      locales.forEach(locale => {
+      locales.forEach((locale) => {
         const { thousand, decimal } = NUMBER_SEPARATORS[locale];
         const value = `1${thousand}000${decimal}00`;
         const expected = 1000.0;

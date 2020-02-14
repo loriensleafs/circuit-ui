@@ -31,7 +31,7 @@ export default {
 };
 
 // SearchInputs always need labels for accessibility.
-const SearchInputWithLabel = props => {
+const SearchInputWithLabel = (props) => {
   const id = uniqueId();
   return (
     <Label htmlFor={id}>

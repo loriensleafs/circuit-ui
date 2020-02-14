@@ -31,7 +31,7 @@ export default {
 };
 
 // Inputs always need labels for accessibility.
-const InputWithLabel = props => {
+const InputWithLabel = (props) => {
   const id = uniqueId();
   return (
     <Label htmlFor={id}>

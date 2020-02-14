@@ -39,14 +39,14 @@ export class ModalProvider extends Component {
     const { isOpen } = this.state;
     if (!isOpen && prevIsOpen) {
       setTimeout(() => {
-        this.setState(prevState => ({ ...prevState, modal: null }));
+        this.setState((prevState) => ({ ...prevState, modal: null }));
       }, TRANSITION_DURATION);
     }
   }
 
-  setModal = config => {
+  setModal = (config) => {
     window.onpopstate = this.closeModal;
-    this.setState(prevState => ({
+    this.setState((prevState) => ({
       ...prevState,
       modal: { ...prevState.modal, ...config },
       isOpen: true,
@@ -55,7 +55,7 @@ export class ModalProvider extends Component {
 
   closeModal = () => {
     window.onpopstate = null;
-    this.setState(prevState => ({
+    this.setState((prevState) => ({
       ...prevState,
       isOpen: false,
     }));

@@ -122,7 +122,7 @@ describe('numbers', () => {
       'sk-SK': '1\xA0000,00',
       'sv-SE': '1\xA0000,00',
     };
-    locales.forEach(locale => {
+    locales.forEach((locale) => {
       it(`should localize ${number} to ${expectedNumbers[locale]} for ${locale}.`, () => {
         const expected = expectedNumbers[locale];
         const actual = numbers.formatNumberForLocale(number, locale);

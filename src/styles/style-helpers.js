@@ -137,7 +137,7 @@ export const subtractUnit = (...args) => transformUnit(args, subtract);
 export const multiplyUnit = (...args) => transformUnit(args, multiply, false);
 export const divideUnit = (...args) => transformUnit(args, divide, false);
 
-export const createMediaQueries = mapValues(mediaExpression => {
+export const createMediaQueries = mapValues((mediaExpression) => {
   const { prefix = '', suffix = '' } =
     typeof mediaExpression === 'string'
       ? {}

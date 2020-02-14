@@ -70,7 +70,7 @@ describe('Select', () => {
   });
 
   it('should render with a prefix when passed the prefix prop', () => {
-    const DummyElement = props => (
+    const DummyElement = (props) => (
       <div style={{ width: '24px', height: '24px' }} {...props} />
     );
     const actual = create(

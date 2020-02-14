@@ -21,7 +21,7 @@ import { css } from '@emotion/core';
 import { childrenPropType } from '../../util/shared-prop-types';
 import { directions } from '../../styles/constants';
 
-const getInlineStyles = theme => css`
+const getInlineStyles = (theme) => css`
   display: flex;
   flex-wrap: nowrap;
 
@@ -91,7 +91,7 @@ const ButtonGroupList = styled('ul')(
  */
 const ButtonGroup = ({ children, ...props }) => (
   <ButtonGroupList {...props}>
-    {Children.map(children, child => (child ? <li>{child}</li> : null))}
+    {Children.map(children, (child) => (child ? <li>{child}</li> : null))}
   </ButtonGroupList>
 );
 

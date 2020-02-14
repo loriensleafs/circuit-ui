@@ -22,7 +22,7 @@ import { CalendarWrapper } from './components';
 import { ReactComponent as CloseIcon } from './close.svg';
 import { ReactComponent as ArrowRightIcon } from './arrow-right.svg';
 
-const SingleDayPicker = props => (
+const SingleDayPicker = (props) => (
   <CalendarWrapper>
     <SingleDatePicker
       navNext={<ArrowRightIcon />}

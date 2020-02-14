@@ -52,7 +52,7 @@ const SubHeadingElement = styled('h3')(baseStyles, sizeStyles, noMarginStyles);
  * tag, except h1.
  */
 
-const SubHeading = props => <SubHeadingElement {...props} />;
+const SubHeading = (props) => <SubHeadingElement {...props} />;
 
 SubHeading.KILO = KILO;
 SubHeading.MEGA = MEGA;

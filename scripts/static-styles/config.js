@@ -46,7 +46,7 @@ const { circuit } = theme;
 const { colorNames, sizes } = styleConstants;
 const { KILO, MEGA, GIGA } = sizes;
 
-const element = props => <div {...props} />;
+const element = (props) => <div {...props} />;
 
 export const PropTypes = {
   string: ['string'],

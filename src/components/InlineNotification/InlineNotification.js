@@ -32,7 +32,7 @@ const marginStyles = ({ noMargin }) =>
     margin-bottom: 0;
   `;
 
-const createLeftBorderStyles = colorName => ({ theme, size, type }) => {
+const createLeftBorderStyles = (colorName) => ({ theme, size, type }) => {
   const colors = {
     [DANGER]: theme.colors.danger,
     [SUCCESS]: theme.colors.success,

@@ -22,7 +22,7 @@ describe('Text', () => {
    * Style tests.
    */
   const elements = ['p', 'article', 'div'];
-  elements.forEach(as => {
+  elements.forEach((as) => {
     it(`should render as ${as} element, when passed "${as}" for the element prop`, () => {
       const heading = create(
         <Text as={as}>{`${as.toUpperCase()} heading`}</Text>,
@@ -32,7 +32,7 @@ describe('Text', () => {
   });
 
   const sizes = ['kilo', 'mega', 'giga'];
-  sizes.forEach(size => {
+  sizes.forEach((size) => {
     it(`should render with size ${size}, when passed "${size}" for the size prop`, () => {
       const heading = create(<Text {...{ size }}>{`${size} heading`}</Text>);
       expect(heading).toMatchSnapshot();

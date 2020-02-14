@@ -36,7 +36,7 @@ export {
   range,
 } from 'lodash/fp';
 
-export const keys = obj => Object.keys(obj);
+export const keys = (obj) => Object.keys(obj);
 
 // This only works with an array. Might implement iterator
 // approach.
@@ -56,7 +56,7 @@ export const mapKeys = curry((iteratee, obj) =>
   }),
 );
 
-export const reverse = arr => [...arr].reverse();
+export const reverse = (arr) => [...arr].reverse();
 
 export const findLast = curry((predicate, arr) =>
   flow(reverse, find(predicate))(arr),
@@ -72,7 +72,7 @@ export const concat = curry((first, second) => first.concat(second));
 
 export const slice = curry((start, end, arr) => arr.slice(start, end));
 
-export const identity = val => val;
+export const identity = (val) => val;
 
 export const some = curry((predicate, arr) => arr.some(predicate));
 
@@ -96,11 +96,11 @@ export const pickBy = curry((iteratee, obj) =>
   )(obj),
 );
 
-export const toBool = val => !!val;
+export const toBool = (val) => !!val;
 
 // This is only useful for debugging a pipe set up
 // with flow or compose.
-export const trace = val => {
+export const trace = (val) => {
   console.log(trace); // eslint-disable-line
   return val;
 };

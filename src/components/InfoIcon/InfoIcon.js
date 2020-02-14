@@ -32,7 +32,7 @@ const StyledIcon = styled(Icon)(baseStyles);
  * A small info icon used for triggering tooltips
  * and other informational content.
  */
-const InfoIcon = props => <StyledIcon {...props} />;
+const InfoIcon = (props) => <StyledIcon {...props} />;
 
 /**
  * @component

@@ -81,7 +81,7 @@ const marginStyles = ({ noMargin }) =>
   `;
 
 const StyledList = styled('ol', {
-  shouldForwardProp: prop => isPropValid(prop) && prop !== 'size',
+  shouldForwardProp: (prop) => isPropValid(prop) && prop !== 'size',
 })`
   ${baseStyles};
   ${sizeStyles};

@@ -55,7 +55,7 @@ const TooltipContainer = styled('div')`
   }
 `;
 
-const TooltipWithContainer = props => (
+const TooltipWithContainer = (props) => (
   <TooltipContainer>
     <Tooltip {...props}>I am a teeny, tiny tooltip.</Tooltip>
     <Icon />

@@ -106,7 +106,7 @@ const StyledBadge = styled('div')`
 /**
  * A badge for displaying update notifications etc.
  */
-const Badge = props => <StyledBadge {...props} />;
+const Badge = (props) => <StyledBadge {...props} />;
 
 Badge.NEUTRAL = colorNames.NEUTRAL;
 Badge.PRIMARY = colorNames.PRIMARY;

@@ -29,10 +29,10 @@ export default {
 };
 
 /* eslint-disable react/prop-types */
-const SelectorsWithState = props => {
+const SelectorsWithState = (props) => {
   const [selected, setSelected] = useState(0);
 
-  const handleChange = index => e => {
+  const handleChange = (index) => (e) => {
     setSelected(index);
     if (props.onClick) {
       props.onClick(e);

@@ -22,13 +22,13 @@ import AutoCompleteInput from '../AutoCompleteInput';
 import Tag from '../Tag';
 
 const TagsWrapper = styled('div')`
-  margin-top: ${props => props.theme.spacings.kilo};
+  margin-top: ${(props) => props.theme.spacings.kilo};
   /* this *hack* is to not allow the tags to be visible bellow the overlay */
   padding: 0 1px 0 1px;
 
   span {
     display: inline-block;
-    margin-bottom: ${props => props.theme.spacings.byte};
+    margin-bottom: ${(props) => props.theme.spacings.byte};
   }
 `;
 
@@ -46,19 +46,19 @@ class AutoCompleteTags extends Component {
     }
   }
 
-  handleAddTag = item =>
+  handleAddTag = (item) =>
     this.setState(({ tags }) => ({ tags: [...tags, item] }));
 
-  handleRemoveTag = newTag =>
+  handleRemoveTag = (newTag) =>
     this.setState(({ tags }) => ({
-      tags: remove(tag => tag === newTag)(tags),
+      tags: remove((tag) => tag === newTag)(tags),
     }));
 
   render() {
     const { availableTags } = this.props;
     const { tags } = this.state;
     const autoCompleteItems = availableTags.filter(
-      item => !includes(item, tags),
+      (item) => !includes(item, tags),
     );
 
     return (
@@ -70,7 +70,7 @@ class AutoCompleteTags extends Component {
         />
         {!!tags.length && (
           <TagsWrapper>
-            {tags.map(tag => (
+            {tags.map((tag) => (
               <Tag key={tag} onRemove={() => this.handleRemoveTag(tag)}>
                 {tag}
               </Tag>

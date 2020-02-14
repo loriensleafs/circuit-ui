@@ -31,7 +31,7 @@ const StyledImage = styled('img')(baseStyles);
 /**
  * The Image component. Responsive by default.
  */
-const Image = props => <StyledImage {...props} />;
+const Image = (props) => <StyledImage {...props} />;
 
 Image.propTypes = {
   /**

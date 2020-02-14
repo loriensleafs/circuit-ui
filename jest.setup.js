@@ -34,7 +34,7 @@ const WithProviders = ({ children }) => (
   </ComponentsContext.Provider>
 );
 
-const renderWithProviders = renderFn => (component, ...rest) =>
+const renderWithProviders = (renderFn) => (component, ...rest) =>
   renderFn(<WithProviders>{component}</WithProviders>, rest);
 
 global.axe = axe;

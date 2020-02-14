@@ -16,8 +16,8 @@
 import { findIndex } from 'lodash/fp';
 import { isArray } from '../../../../util/type-check';
 
-const getSelectedChildIndex = children =>
-  isArray(children) ? findIndex(child => child.props.selected, children) : 0;
+const getSelectedChildIndex = (children) =>
+  isArray(children) ? findIndex((child) => child.props.selected, children) : 0;
 
 const getSecondaryChild = (children, visible) => {
   if (!children) {
@@ -25,7 +25,7 @@ const getSecondaryChild = (children, visible) => {
   }
 
   return isArray(children)
-    ? children.map(child => ({
+    ? children.map((child) => ({
         ...child,
         props: { ...child.props, secondary: true, visible },
       }))

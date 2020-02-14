@@ -41,7 +41,7 @@ const availablePreviousPages = (page, totalPages) => {
   return page + 1 === totalPages ? 2 : 1;
 };
 
-const availableNextPages = page => {
+const availableNextPages = (page) => {
   if (page === 1) {
     return 3;
   }
@@ -75,7 +75,7 @@ export const arrayOfNextValues = (page, totalPages) => {
   );
 };
 
-export const hasOmittedPreviousPages = previousValues => {
+export const hasOmittedPreviousPages = (previousValues) => {
   if (isEmpty(previousValues)) {
     return false;
   }

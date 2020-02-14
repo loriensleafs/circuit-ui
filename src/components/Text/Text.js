@@ -82,7 +82,7 @@ const marginStyles = ({ noMargin }) =>
   `;
 
 export const StyledText = styled('p', {
-  shouldForwardProp: prop => isPropValid(prop) && prop !== 'size',
+  shouldForwardProp: (prop) => isPropValid(prop) && prop !== 'size',
 })`
   ${baseStyles};
   ${sizeStyles};
@@ -97,7 +97,7 @@ export const StyledText = styled('p', {
  * <p>, <div>, <article>, or <section> elements. Capable of rendering
  * using different HTML tags.
  */
-const Text = props => <StyledText {...props} />;
+const Text = (props) => <StyledText {...props} />;
 
 Text.KILO = KILO;
 Text.MEGA = MEGA;

@@ -32,9 +32,9 @@ export default {
 // eslint-disable-next-line react/prop-types
 const CheckboxWithState = ({ checked: initial, children, ...props }) => {
   const [checked, setChecked] = useState(initial);
-  const handleChange = e => {
+  const handleChange = (e) => {
     action('Checkbox clicked')(e);
-    setChecked(prev => !prev);
+    setChecked((prev) => !prev);
   };
   return (
     <Checkbox {...props} checked={checked} onChange={handleChange}>

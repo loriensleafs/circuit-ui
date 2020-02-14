@@ -67,7 +67,7 @@ describe('Modal', () => {
     onClose: jest.fn(),
   };
 
-  const openModal = modal => {
+  const openModal = (modal) => {
     const wrapper = render(<PageWithModal modal={modal} />);
 
     act(() => {

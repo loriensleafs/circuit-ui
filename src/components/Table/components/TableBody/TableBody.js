@@ -27,7 +27,7 @@ import {
 } from '../../utils';
 import { TR_KEY_PREFIX, TD_KEY_PREFIX } from '../../constants';
 
-const getRowKey = index => `${TR_KEY_PREFIX}-${index}`;
+const getRowKey = (index) => `${TR_KEY_PREFIX}-${index}`;
 const getCellKey = (rowIndex, cellIndex) =>
   `${TD_KEY_PREFIX}-${rowIndex}-${cellIndex}`;
 

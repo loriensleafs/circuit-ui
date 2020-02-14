@@ -27,7 +27,7 @@ const CustomArrow = styled('div')`
   color: ${({ theme }) => theme.colors.b500};
 `;
 
-const RangePicker = props => (
+const RangePicker = (props) => (
   <CalendarWrapper>
     <DateRangePicker
       customArrowIcon={

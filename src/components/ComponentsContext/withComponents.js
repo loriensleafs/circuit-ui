@@ -22,7 +22,7 @@ import * as defaultComponents from './components';
 /**
  * Subscribe to the components context with a HOC.
  */
-const withComponents = Component => {
+const withComponents = (Component) => {
   function WrappedComponent(props) {
     return (
       <ComponentsContext.Consumer>

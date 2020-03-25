@@ -244,7 +244,7 @@ class Table extends Component {
       condensed,
       scrollable,
       onRowClick,
-      ...props,
+      ...props
     } = this.props;
     const {
       sortDirection,

@@ -13,4 +13,4 @@
  * limitations under the License.
  */
 
-module.exports = require('@sumup/foundry/prettier')({ language: 'JavaScript' });
+module.exports = require('@sumup/foundry/prettier')();
